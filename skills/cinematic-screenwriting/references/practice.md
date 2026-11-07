@@ -36,6 +36,15 @@ MV 綁主檔版本、段落與 offset，保留已鎖定歌詞、唱法與節拍�
 
 附稿次與草稿／確認狀態、場次 ID、本場作用、人物目的與知情範圍、刺激、必要行動、台詞／歌聲責任、持物及結尾狀態。[Foyege 導演技能](../../foyege-cinematic-direction/SKILL.md) 將其展開為目光目標、眼頭先後、表情殘留與接鏡。計畫狀態只有在相應影像接受後，才能成為 take 連續性依據。
 
+
+## 情緒與動作交接
+
+交代情緒的起因、距刺激的故事時間，以及角色當下仍在做什麼。場景視角是觀眾跟隨誰的經驗，不必等同角色的主觀攝影鏡頭。這能支援導演選反應與留白。[Scriptnotes 624](https://johnaugust.com/2024/scriptnotes-episode-624-creating-empathy-for-your-characters-transcript)
+
+動作場景保留影響選擇的門口、阻擋、人物與道具關係，讓觀眾知道角色為何改變做法。劇本交代可見事件與人物經驗，製作交接再補機位、接觸點及精確時序。[Scriptnotes 680](https://johnaugust.com/2025/scriptnotes-episode-680-writing-action-set-pieces-transcript)
+
+兩份文字稿的相關段落於 2026-11-07 閱讀，沒有完整聽審。以下為本技能原創交接例，未生成：C1 想把箱子送過門口，發現寬度不足後先停下；她看向門把，再轉箱子，但保留原握持者與支撐。劇本保留這次判斷，白模決定可通過的路徑，表演卡處理受阻後的反應。
+
 ## 格式與研究邊界
 
 [Fountain 官方語法](https://fountain.io/syntax/) 提供 scene heading、character、dialogue、lyrics 及前綴語法。中文分頁與匯出需在實際工具檢查。

@@ -50,6 +50,39 @@ Adobe 官方〈Add J cuts and L cuts to your filmmaking toolkit〉。J-cut 讓�
 
 落地至 [production.md](production.md) 的接鏡卡。剪接餘量及 C1 的示例為本技能延伸，不是教材的固定秒數或案例。
 
+
+## 2026-11-07 追加研究
+
+以下讀取第一方文章的相關正文／文字稿；未完整觀看內嵌影片或聽完節目，沒有新增本機推論證據。
+
+### T9 目光切換與局部錯峰
+
+Natasha Krinsky／Animation Mentor，2025-09-22，〈How to Animate Blinks and Eye Movements for Subtlety〉。閱讀眼動、眨眼及分層動作段。採用有目的的視線切換與局部錯峰；依角色及參考表演調整。[原文](https://www.animationmentor.com/blog/tutorial-animate-blinks-eye-movement/)
+
+教材的影格數與情緒示例不作通用規則。持續注視可以成立，不為增加活力而自動添加眼球抖動、眨眼或瞳孔變化。落地至 [目光與情緒承接](microacting.md#目光與情緒承接)。
+
+### T10 重量、阻力與接觸
+
+Natasha Krinsky／Animation Mentor，2026-01-08，〈How to Animate Sword Fights and Battle Sequences〉。閱讀重量、spacing、接觸與 polish 段。採用物件阻力、動作速度變化與握持接觸檢查。落地為一般持物與受力驗收，未採用該文的具體戰鬥示範。[原文](https://www.animationmentor.com/blog/tutorial-animate-sword-fights-battle-sequences/)
+
+### T11 剪接注意力落點
+
+Jonny Elwyn／Frame.io，2022-10-03，2023-12-14 更新。閱讀〈7 Simple, Yet Powerful, Video Editing Tricks〉的 Cross dissolve 段。採用暫時疊合切點兩側畫面，檢查觀眾注意力落點；檢查後移除疊合。實際剪法仍依故事選擇。[原文](https://blog.frame.io/2022/10/03/7-simple-video-editing-tricks/)
+
+落地至 [注意力與受力檢查](production.md#注意力與受力檢查)。這是觀眾看畫面的落點，與角色看向何物的眼線分開。
+
+### T12 情緒距離與可演行動
+
+John August、Craig Mazin，Scriptnotes 624 文字稿，2024-01-30。閱讀 POV 與 Emotional States 段，採用當下觀眾視角、情緒起因及距刺激的時間、可演行動。具體卡片由本技能設計。[原文](https://johnaugust.com/2024/scriptnotes-episode-624-creating-empathy-for-your-characters-transcript)
+
+### T13 動作場景的空間與人物
+
+John August、Christina Hodson，Scriptnotes 680 文字稿，2025-03-24。閱讀 action set piece 討論的空間、人物經驗及稿件用途段。採用必要空間資訊與人物選擇；細節程度依劇本或製作交接需求配置。[原文](https://johnaugust.com/2025/scriptnotes-episode-680-writing-action-set-pieces-transcript)
+
+### 未採用項目
+
+本次 Foyege24 搜尋另見第三方轉貼線索，未取得新的作者原文，不列為新增作者方法。既有 S1–S11 仍是核心來源。Blender 4.5 手冊正文取得 402、官方 staging 原始文件取得 403，沒有據搜尋摘要新增插值或 rig 操作規則。Pixar 舊論文連結轉至技術首頁，未據此採用論文結論。
+
 ## 方法整合與差異
 
 - 表演先寫刺激與變化，再選本機能承載的控制方式。攝影機需要看見重要細節。
