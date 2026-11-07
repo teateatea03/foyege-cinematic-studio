@@ -1,0 +1,4 @@
+interface:
+  display_name: "Foyege 影像導演"
+  short_description: "優先本機資源，設計微表情、眼神、Blender 預演與跨鏡連續性"
+  default_prompt: "使用 $foyege-cinematic-direction，優先運用本機既有資源，把我的影像構想拆成可執行鏡頭，特別處理微表情、眼神、動作因果與接鏡，列明資源與待驗證項目。"

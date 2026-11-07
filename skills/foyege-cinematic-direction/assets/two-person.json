@@ -1,0 +1,119 @@
+{
+  "fps": 24,
+  "frames": 96,
+  "resolution": [
+    640,
+    360
+  ],
+  "actors": [
+    {
+      "id": "C1",
+      "color": [
+        0.1,
+        0.4,
+        0.8
+      ],
+      "yaw_deg": 90.0,
+      "keys": [
+        {
+          "frame": 1,
+          "location": [
+            -1.2,
+            0,
+            0
+          ]
+        },
+        {
+          "frame": 96,
+          "location": [
+            -1.2,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "color": [
+        0.85,
+        0.25,
+        0.1
+      ],
+      "yaw_deg": -90,
+      "keys": [
+        {
+          "frame": 1,
+          "location": [
+            1.3,
+            0,
+            0
+          ]
+        },
+        {
+          "frame": 96,
+          "location": [
+            0.9,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "boxes": [
+    {
+      "id": "TABLE1",
+      "location": [
+        0,
+        0,
+        0.45
+      ],
+      "size": [
+        1,
+        0.8,
+        0.9
+      ]
+    }
+  ],
+  "camera": {
+    "lens_mm": 40,
+    "keys": [
+      {
+        "frame": 1,
+        "location": [
+          0,
+          -6,
+          2.5
+        ],
+        "look_at": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "frame": 96,
+        "location": [
+          0.7,
+          -5,
+          2.1
+        ],
+        "look_at": [
+          0,
+          0,
+          1.1
+        ]
+      }
+    ]
+  },
+  "topview": {
+    "center": [
+      0,
+      0,
+      0
+    ],
+    "height": 10,
+    "ortho_scale": 7
+  }
+}
