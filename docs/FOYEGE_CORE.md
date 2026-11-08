@@ -19,6 +19,8 @@ Foyege24 的公開白模教學是本專案的主線。[來源 S4](../skills/foye
 
 若指定持續注視，執行稿用眼瞼開度、唯一目標與保持條件描述。既有試片曾在疲態描述下閉眼，改為明確開眼條件後，在單案例維持開眼淺笑。[歷史短測](../skills/foyege-cinematic-direction/references/local-tests.md)
 
+對話將台詞中的詞與表情變化綁定，交代當下話語權、誰準備接話，以及打斷或沉默後聽者仍在做什麼。用「目的、觸發、可見變化、保持／禁止反應」檢查節拍；聲音、局部表情與切後殘留分開驗收。已鎖定的 MV 保留原詞與唱法。見新增的 [詞級觸發與話輪](../skills/foyege-cinematic-direction/references/acting-beats.md) 及 [影片依據 Y1–Y2](../skills/foyege-cinematic-direction/references/sources.md#2026-11-08-youtube-補充)。
+
 ## 空間與接鏡
 
 同一世界地圖可支援多機位，每鏡重新推導畫面左右。反打使用前鏡已接受的世界與表演狀態重建新構圖。上一鏡尾幀可作狀態參考，首幀輸入則需符合新鏡機位。
