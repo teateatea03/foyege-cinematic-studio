@@ -1,5 +1,10 @@
 # 驗證範圍
 
+## 2026-11-09 Drama3 配音製作補強
+
+[研究與限制](RESEARCH_2026-11-09-drama3-voice.md) 記錄 30 個不同時間的畫面、HTTP 429 字幕缺口與固定上游 revision。19 張上游 workflow／30 個節點宣告通過有限靜態核對；四項 stdlib 時長／詞時間計算通過。新增配音表演卡與雙技能交接，未做模型載入、ASR、音質、克隆相似度或完整 Studio 驗收。
+
+
 ## 2026-11-09 HyperFlow Flash 教學補強
 
 [研究及限制](RESEARCH_2026-11-09-hyperflow-flash.md) 保留影片／字幕／靜幀範圍與兩個固定來源 revision。八份上游 API graph 與四份 Python AST 為靜態核對，沒有在本機安裝／載入 Flash，也未以 24GB 展示推定 5080 可用。Foyege 原創適配同步公開、Codex 與 Claude，既有內容保留；音訊及微表演精度仍待實測。

@@ -69,6 +69,8 @@ Claude 使用相同目錄格式，將 destination 改為其技能根目錄，例
 
 [HyperFlow H3 Flash 教學補強](docs/RESEARCH_2026-11-09-hyperflow-flash.md)：新增壓縮模型分流、參考圖責任、少步數試產與聲音分項驗收；5080 推論仍待測。
 
+[Drama3 語音導演台補強](docs/RESEARCH_2026-11-09-drama3-voice.md)：新增固定選角、三份文字、聲音上下文、局部重配與角色分軌交接，連回觸發詞與微表情；未做音質評比或模型推論。
+
 ## 證據與限制
 
 2026-11-09 補齊 SAM3D／RefMod，已完成 5080 推論、GLB／Blender 表情快照及 RefMod 儲存／讀檔／生成。完整參考可作基準，pooled16 出現臉眼失真；瞳角色轉接、長鏡與精準微表情仍待驗收。[結果、版本與六份 API 工作流](docs/experiments/2026-11-09-sam3d-refmod/README.md)

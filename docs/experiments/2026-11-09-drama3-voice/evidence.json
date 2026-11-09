@@ -1,0 +1,304 @@
+{
+  "source": {
+    "id": "wb9Vxnzkz50",
+    "title": "开源登顶！Drama3新老模型对比测评！新版语音导演台整合包免费下载！Comfyui T8整合包V24更新",
+    "channel": "T8star-Aix",
+    "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+    "duration": 751,
+    "upload_date": "20261109"
+  },
+  "media_sha256": "b928388b60441d72fe3e089660abd0c9de0d178dd654c01167c6058676ba5099",
+  "probe": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "duration": 750.6,
+    "vcodec": "h264"
+  },
+  "caption_download": {
+    "status": "failed",
+    "http": 429,
+    "retries": 0
+  },
+  "sample_times_seconds": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330,
+    360,
+    390,
+    420,
+    450,
+    480,
+    510,
+    540,
+    570,
+    600,
+    630,
+    660,
+    690,
+    720,
+    480,
+    490,
+    500,
+    510,
+    520,
+    530,
+    540,
+    550
+  ],
+  "samples_viewed": 33,
+  "unique_times": 30,
+  "analysis": {
+    "external_vlm": "off",
+    "independent_audio_listening": false,
+    "asr": false,
+    "full_transcript_read": false,
+    "whole_video_decompose": false,
+    "probe_and_tiles": "completed"
+  },
+  "upstream": {
+    "upstream_revision": "0c57de542e5d1b6c55485cfaa97e13e1d536a823",
+    "declared_node_ids": [
+      "T8DramaAlign",
+      "T8DramaBranch",
+      "T8DramaCodecDecode",
+      "T8DramaCodecEncode",
+      "T8DramaCreativeBatch",
+      "T8DramaCreativeDelivery",
+      "T8DramaCreativeProjectCreate",
+      "T8DramaCreativeProjectExport",
+      "T8DramaCreativeProjectImport",
+      "T8DramaCreativeProjectLoad",
+      "T8DramaCreativeTextPreview",
+      "T8DramaDecode",
+      "T8DramaEditor",
+      "T8DramaGenerate",
+      "T8DramaInfill",
+      "T8DramaLive",
+      "T8DramaLoadSession",
+      "T8DramaLoader",
+      "T8DramaR2T2Transcribe",
+      "T8DramaReference",
+      "T8DramaSRT",
+      "T8DramaSaveSession",
+      "T8DramaScene",
+      "T8DramaSession",
+      "T8DramaTranscribe",
+      "T8DramaVoiceCastBuild",
+      "T8DramaVoiceCastLoad",
+      "T8DramaVoiceLibraryList",
+      "T8DramaVoiceLibraryLoad",
+      "T8DramaVoiceLibrarySave"
+    ],
+    "workflow_checks": [
+      {
+        "name": "workflow_align.json",
+        "t8_node_types": [
+          "T8DramaAlign"
+        ],
+        "sha256": "6493cc052fab8cfdd8f6d9777651775bec3da8298638caade43d120112f2c376"
+      },
+      {
+        "name": "workflow_asr.json",
+        "t8_node_types": [
+          "T8DramaTranscribe"
+        ],
+        "sha256": "d72308a357f819520caed6d06e628e8ccfcad4680238b4e018183c45423c1f7f"
+      },
+      {
+        "name": "workflow_basic.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaLoader",
+          "T8DramaSession"
+        ],
+        "sha256": "7ba90a1722c64c45b5e08e425b5b06daf0732f84be42ce9a3ae0df805042fd5e"
+      },
+      {
+        "name": "workflow_codec.json",
+        "t8_node_types": [
+          "T8DramaCodecDecode",
+          "T8DramaCodecEncode",
+          "T8DramaLoader"
+        ],
+        "sha256": "2d00baf0e8fd3eab875fa3d6450f6ca0372a13966f063d6b1b85f7c63a4312b2"
+      },
+      {
+        "name": "workflow_creative_bundle_resume.json",
+        "t8_node_types": [
+          "T8DramaCreativeBatch",
+          "T8DramaCreativeDelivery",
+          "T8DramaCreativeProjectExport",
+          "T8DramaCreativeProjectImport",
+          "T8DramaLoader"
+        ],
+        "sha256": "60307d920b983a01817e8aa55864b2b4b3d19506e327fb948fb3e76062a1ad6d"
+      },
+      {
+        "name": "workflow_creative_project_resume.json",
+        "t8_node_types": [
+          "T8DramaCreativeBatch",
+          "T8DramaCreativeDelivery",
+          "T8DramaCreativeProjectExport",
+          "T8DramaCreativeProjectLoad",
+          "T8DramaLoader"
+        ],
+        "sha256": "71b1092e4602416d766c6a0b8d7d6e2ed66770ead273ab363d537429ebd20f5b"
+      },
+      {
+        "name": "workflow_creative_voice_project.json",
+        "t8_node_types": [
+          "T8DramaCreativeBatch",
+          "T8DramaCreativeDelivery",
+          "T8DramaCreativeProjectCreate",
+          "T8DramaCreativeProjectExport",
+          "T8DramaLoader",
+          "T8DramaReference",
+          "T8DramaSaveSession",
+          "T8DramaSession",
+          "T8DramaVoiceCastBuild",
+          "T8DramaVoiceLibraryLoad",
+          "T8DramaVoiceLibrarySave"
+        ],
+        "sha256": "30f9f39ccd97b71c0b64a2b03ed0523f2b76bcc63574698609826b78620b795b"
+      },
+      {
+        "name": "workflow_editor.json",
+        "t8_node_types": [
+          "T8DramaEditor",
+          "T8DramaLoadSession",
+          "T8DramaLoader",
+          "T8DramaSaveSession"
+        ],
+        "sha256": "ec47171723e059f6120e829fd757938164205df193d5967197c4cd2aaadb2d23"
+      },
+      {
+        "name": "workflow_infill.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaInfill",
+          "T8DramaLoader",
+          "T8DramaSession"
+        ],
+        "sha256": "1b62093d461d44d8c195e578c0aaf40f5ad5f0d56e06665b2eade03526e67097"
+      },
+      {
+        "name": "workflow_live.json",
+        "t8_node_types": [
+          "T8DramaLive",
+          "T8DramaLoader",
+          "T8DramaSession"
+        ],
+        "sha256": "0b5ad529c4fb80ca84a97253b43b9bee8ee1d081aaafcc8c4bc160f76201ef14"
+      },
+      {
+        "name": "workflow_load_session.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaLoadSession",
+          "T8DramaLoader",
+          "T8DramaScene"
+        ],
+        "sha256": "0df49480fedb139de8c383b167c617833fd47ffb0b9882de614a550a26623fe3"
+      },
+      {
+        "name": "workflow_long.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaLoader",
+          "T8DramaSession"
+        ],
+        "sha256": "a01f871dacc82207b4d8229a49d940f360a591b0797acbdf2ea10f64a540d30b"
+      },
+      {
+        "name": "workflow_r2t2.json",
+        "t8_node_types": [
+          "T8DramaR2T2Transcribe"
+        ],
+        "sha256": "375254a4c206510357b3286611ae95b9b8106d866e7fb9dfb04d9f26f2195d1d"
+      },
+      {
+        "name": "workflow_reference.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaLoader",
+          "T8DramaReference",
+          "T8DramaSaveSession",
+          "T8DramaSession"
+        ],
+        "sha256": "47895a5e227a1ff9a4dfff3d316a9ca90c8d5c7f538eb6ee546c4f5690e6cf2e"
+      },
+      {
+        "name": "workflow_revision.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaLoader",
+          "T8DramaSession"
+        ],
+        "sha256": "1d49c083d4d8549054af2dc02c82752a91bbe8c46ee62e1bb6e4c6871b292c47"
+      },
+      {
+        "name": "workflow_save_session.json",
+        "t8_node_types": [
+          "T8DramaBranch",
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaLoader",
+          "T8DramaSaveSession",
+          "T8DramaSession"
+        ],
+        "sha256": "bb256f2485a613f22e5d977412d7d8f7910f336f157594e674380df5f5915aa8"
+      },
+      {
+        "name": "workflow_scene.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaLoader",
+          "T8DramaScene"
+        ],
+        "sha256": "231d51e15ec2ff948ef1859c686b5d133626ca1ed82fd1a8c51ef8c3d267bba1"
+      },
+      {
+        "name": "workflow_srt.json",
+        "t8_node_types": [
+          "T8DramaLoader",
+          "T8DramaSRT"
+        ],
+        "sha256": "cbf34aa07b17328c4bc54a939a87152055f78ca3be2095a3188a9123c740955f"
+      },
+      {
+        "name": "workflow_stream.json",
+        "t8_node_types": [
+          "T8DramaDecode",
+          "T8DramaGenerate",
+          "T8DramaLoader",
+          "T8DramaSession"
+        ],
+        "sha256": "0036818d757817410d9a1bc8fa8e0f382b7d628a94e7c223d9114522712e5106"
+      }
+    ],
+    "arithmetic_checks": [
+      "pad mode preserves a line that exceeds target duration",
+      "padding uses an exact integer sample count",
+      "out-of-bound stretch preserves original duration",
+      "word timestamps map with explicit offset and time scale"
+    ],
+    "limitations": "Only JSON/AST structure and four reviewed arithmetic functions; no app import, model load, voice inference, listening or export runtime acceptance."
+  },
+  "model_generation": false,
+  "runtime_changes": false
+}
