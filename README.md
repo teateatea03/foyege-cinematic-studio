@@ -13,7 +13,7 @@
 | 跨鏡延續 | 已接受 take、持物、眼線、情緒和聲音承接 |
 | 按工具能力執行 | 模型提示詞、驅動片或臉部動畫的適用範圍 |
 
-[核心方法與檢查](docs/FOYEGE_CORE.md) · [作者來源與閱讀範圍](skills/foyege-cinematic-direction/references/sources.md) · [2026-11-07 研究補強](docs/RESEARCH_2026-11-07.md) · [2026-11-08 YouTube 表演補強](docs/RESEARCH_2026-11-08.md) · [2026-11-09 場景與素材交接](docs/RESEARCH_2026-11-09.md)
+[核心方法與檢查](docs/FOYEGE_CORE.md) · [作者來源與閱讀範圍](skills/foyege-cinematic-direction/references/sources.md) · [2026-11-07 研究補強](docs/RESEARCH_2026-11-07.md) · [2026-11-08 YouTube 表演補強](docs/RESEARCH_2026-11-08.md) · [2026-11-09 場景與素材交接](docs/RESEARCH_2026-11-09.md) · [第二輪表演參考補強](docs/RESEARCH_2026-11-09-performance.md)
 
 ## 兩個技能
 

@@ -53,6 +53,12 @@ Foyege [Y6 短劇節拍教學](../../foyege-cinematic-direction/references/sourc
 
 交接導演時附必要資訊的揭露條件及必需行動／反應。敘事視角、角色實際知情與主觀攝影機分開；畫外聲和配樂的故事內接收者也分開。[場景到鏡頭覆蓋](../../foyege-cinematic-direction/references/scene-coverage.md) 將這些意圖轉成構圖、焦點、聲音與事件承擔。只要劇本時維持可讀劇本，按需註記關鍵依賴即可，不把完整覆蓋表強加給每個片段。
 
+## 潛台詞與表演交接
+
+台詞可能以拖延、試探或安撫達成人物目的；依劇本線索選擇策略，未確定的解讀保留為候選。不要把所有內心想法改寫成旁白，也不必為每句話加一個眉眼動作。劇本留下會改變策略的刺激與必要行動，局部表情與幅度交導演。[NYFA 潛台詞教材](https://www.nyfa.edu/student-resources/the-importance-of-subtext-for-actors/) 的相關正文於 2026-11-09 閱讀；以下為原創例。
+
+「票還在這裡」可是在拖住同伴，也可是在結束談話。前者把手留在票旁等回應，後者將票推到對方可取的位置後收手。由人物關係選一版，不同時拼接矛盾策略。只需劇本時交代行動；需要微表演再按導演技能展開。
+
 ## 格式與研究邊界
 
 [Fountain 官方語法](https://fountain.io/syntax/) 提供 scene heading、character、dialogue、lyrics 及前綴語法。中文分頁與匯出需在實際工具檢查。

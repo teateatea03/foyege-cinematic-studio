@@ -115,3 +115,25 @@ Columbia Film Language Glossary。閱讀 [POV](https://filmglossary.ccnmtl.colum
 ACES 官方 [系統概覽](https://docs.acescentral.com/background/overview/) 與 [AMF implementation guide](https://docs.acescentral.com/amf/guides/implementation/)。閱讀 transform 分工、色彩處理歷史及 applied attribute 段。採用記錄已套用／待套用變換、避免重複套用的交接思路。這不是將本機專案改成 ACES 的部署指令；生成媒體未知編碼時不猜 Log、相機 IDT 或 ACES 空間，也不宣稱本機支援 AMF。
 
 上述文件於 2026-11-09 核對。新增工作卡與原創案例是本技能整合，見 [場景覆蓋](scene-coverage.md) 及 [質感檢查](production.md#外觀質感與觀看條件)。
+
+## 2026-11-09 第二輪表演研究
+
+本輪補充四篇非 GitHub 第一方文章。讀取下列正文，未播放內嵌講課影片；來源原理與本技能的原創工作卡分開。與既有 T1／T9 重複的眨眼教學只作交叉核對，不列新增來源。
+
+### T19 表情基準中的發音
+
+AnimSchool，Scott McWhinnie 的〈The Basics of Facial Animation〉，2024-06-26。閱讀 Speed 下的 Eyes and Lids、Brows、Mouth 段；採用各分區可有不同動態、在表情傾向中處理發音的思路。文中影格數及示例不作跨 fps、語言、rig 或生成模型的固定參數。[正文](https://blog.animschool.edu/2024/06/26/the-basics-of-facial-animation/)
+
+### T20 表演參考的選取與分析
+
+AnimSchool，〈Reference Analysis: Capture Convincing Footage〉，網址日期 2025-07-25。正文整理講師 Scott McWhinnie 分析 Jeff Gabor 參考的方式。閱讀機位、道具、逐次回看與轉譯段，採用有目的的參考取捨；風格化改編仍需資產與成片驗證，不把手工動畫的演示轉成模型能力保證。[正文](https://blog.animschool.edu/2025/07/25/reference-analysis-capture-convincing-footage/)
+
+### T21 從潛台詞到可演策略
+
+New York Film Academy，〈The Importance Of Subtext For Actors〉，2016-03-25。閱讀 What is Subtext、Finding the Meaning、Examples 與結語，採用目的、阻力與策略來解讀台詞。將不確定解讀保留為創作選擇，工作卡與新例子由本技能設計；不使用原文的對話例。[正文](https://www.nyfa.edu/student-resources/the-importance-of-subtext-for-actors/)
+
+### T22 以表演目的檢查覆蓋
+
+Sundance Institute，Jessica Herndon 訪問 Affonso Gonçalves，2026-07-30。閱讀文章引言與「Is there a piece of advice…」問答，採用拍攝／生成前確認鏡頭要取得的反應、行動或話語效果。本文未把訪談延伸為固定剪接秒數或每句切反應鏡的規範。[訪談](https://www.sundance.org/blogs/affonso-goncalves-on-bringing-an-editors-eye-to-the-sundance-institute-directors-lab/)
+
+落地至 [表演參考、發音與剪接選擇](performance-transfer.md)，由微表演與話輪頁按需引入。沒有新增平台依賴或本機生成品質主張。
