@@ -91,3 +91,27 @@ John August、Christina Hodson，Scriptnotes 680 文字稿，2025-03-24。閱讀
 - 教學品質、已下載檔案、本機推論成功與觀眾能讀懂表演，分屬不同證據。
 
 本次 Blender 線上手冊頁存取失敗，未將該頁列為新教材依據。Blender 使用沿用現有技能、已驗證代理腳本與實際資產能力。後續新增教學保留作者、網址、閱讀／觀看範圍、適用版本、採用規則和測試結果，避免將宣傳展示當成本機品質測試。
+
+## 2026-11-09 追加研究
+
+### T14 觀眾資訊與延遲
+
+John August、Craig Mazin，Scriptnotes 632，2024-04-01 文字稿。閱讀懸疑／期待、觀眾與角色資訊差、因果延遲及釋放段。採用可追溯的知情時機與延遲理由；節目中的類型示例、幕位置及個人偏好不作每片硬規則。未聽完整節目。[文字稿](https://johnaugust.com/2024/scriptnotes-episode-632-mystery-and-suspense-transcript)
+
+### T15 覆蓋與補拍接點
+
+ScreenSkills 開發的 UK National Occupational Standard `SKSC32`，2020 核准、版本 3，查閱頁面標示 Current。閱讀 performance criteria 6–15 與相關 knowledge：動作／對話／機位的計時、補拍重疊動作、必要內容覆蓋、眼線與速度匹配。將片場場記責任適配為生成 take 的事件覆蓋與補鏡檢查，不要求虛擬拍攝照搬整套劇組職位。[標準正文](https://www.ukstandards.org.uk/en/nos-finder/SKSC32/monitor-script-coverage,-continuity-and-technical-camera-details-during-shooting)
+
+### T16 同框注意力交棒
+
+Animation Mentor，2026-10-06，Nathaniel Seymour 的角色 staging 教材。閱讀正文的主要讀點、陪襯減少動作、剪影與最終相機檢查，以及 stepped／spline 節奏差異。採用注意力交棒與姿態可讀性，不複製其角色、笑料、Maya 參數或肢體控制設定；內嵌影片未連續觀看。[原文](https://www.animationmentor.com/blog/tutorial-use-character-staging-to-guide-viewer-focus/)
+
+### T17 視點、聲音與景深
+
+Columbia Film Language Glossary。閱讀 [POV](https://filmglossary.ccnmtl.columbia.edu/term/point-of-view/)、[Diegetic Sound](https://filmglossary.ccnmtl.columbia.edu/term/diegetic-sound/) 與 [Depth of Field](https://filmglossary.ccnmtl.columbia.edu/term/depth-of-field/) 的定義正文。採用角色主觀鏡頭、故事內聲音與清晰範圍的區分，落地為機位／接收者／焦點欄位。各頁電影片段未在本輪播放；未由術語頁推定器材、鏡頭焦距或角色心理。
+
+### T18 色彩處理歷史
+
+ACES 官方 [系統概覽](https://docs.acescentral.com/background/overview/) 與 [AMF implementation guide](https://docs.acescentral.com/amf/guides/implementation/)。閱讀 transform 分工、色彩處理歷史及 applied attribute 段。採用記錄已套用／待套用變換、避免重複套用的交接思路。這不是將本機專案改成 ACES 的部署指令；生成媒體未知編碼時不猜 Log、相機 IDT 或 ACES 空間，也不宣稱本機支援 AMF。
+
+上述文件於 2026-11-09 核對。新增工作卡與原創案例是本技能整合，見 [場景覆蓋](scene-coverage.md) 及 [質感檢查](production.md#外觀質感與觀看條件)。
