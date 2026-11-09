@@ -149,3 +149,33 @@ Sundance Institute，Jessica Herndon 訪問 Affonso Gonçalves，2026-07-30。�
 另讀 [4D-GS 作者頁](https://guanjunwu.github.io/4dgs/) 的動態表示與新視角說明，及 [MetaHuman 官方表演頁](https://www.metahuman.com/animate) 的臉部捕捉／rig 能力。兩者只作概念辨識，不證明本案例使用該篇 4D-GS、MetaHuman，或本機已有相同部署；不採用其效能宣稱。
 
 採用的是本技能原創的「捕捉範圍、表演與機位分軌、各層事件對齊、最終 take 承接」工作卡，見 [分開驗收](performance-transfer.md#表演機位與生成分開驗收)。不將十五相機、4DGS 或 Seedance 設成依賴，也不把大表情展示等同克制微反應。沒有原始多機片、重建工程、生成輸入及提示詞，相關欄位維持未知。
+
+## 2026-11-09 製作周邊研究
+
+以下六組第一方正文於本日閱讀。採用範圍是素材、剪輯交接、聲音、字幕與交付，不改 Foyege 的人物目的、微表演或分鏡核心。工作卡由本技能設計，各平台規格只適用相應交付。
+
+### T24 素材匯入與剪輯代理
+
+Adobe Premiere 官方〈Ingest and Proxy workflow〉，頁面更新 2026-01-07。閱讀 ingest、proxy 及 unsupported features：保留原始素材、用工作副本改善剪輯、重新連回完整品質來源。採用身份映射與回連檢查，不要求安裝 Premiere，也不把其跨應用限制泛化成所有剪輯器的能力。[正文](https://helpx.adobe.com/premiere/desktop/organize-media/ingest-proxy-workflow/ingest-and-proxy-workflow.html)
+
+### T25 時間線交換的能力邊界
+
+OpenTimelineIO 官方 latest 文件，頁面標示 0.19.0.dev1。閱讀 [Adapters](https://opentimelineio.readthedocs.io/en/latest/tutorials/adapters.html) 及 [Feature Matrix](https://opentimelineio.readthedocs.io/en/latest/tutorials/feature-matrix.html)。採用先查 adapter／格式支援、以代表性片段驗證的思路，不假定效果、變速、轉場可完整往返。這不是本機 OTIO／插件已安裝的證據，亦未依開發版表格承諾任何剪輯器組合。
+
+### T26 響度與真峰值
+
+EBU R 128-2023，2023 年 11 月、V5。[PDF](https://tech.ebu.ch/docs/r/r128.pdf) 正文第 3–4 頁涉及節目整體量測、−23 LUFS、線性製作端 −1 dBTP、平台脈絡及短於一分鐘不建議以 LRA 描述的限制。採用先指定規格再量測，不把廣播目標當所有 MV 的預設，也不自動正規化鎖定主檔。未把規範中的量測容差轉成創作品質分數。
+
+### T27 繁中字幕的交付脈絡
+
+Netflix Partner Help〈Chinese (Traditional) Timed Text Style Guide〉。閱讀 I.1、I.10、I.14、I.16、I.18 及 II.1–4：一般字幕、SDH、成人與兒童的規格有差異，需匹配實際音軌。採用語言／版本與交付類型的區分；一般字幕 16 字／行、成人 9 字／秒僅作該平台例，不套到所有創作或歌詞。[正文](https://partnerhelp.netflixstudios.com/hc/en-us/articles/215994807-Chinese-Traditional-Timed-Text-Style-Guide)
+
+### T28 字幕準確性與可及性
+
+W3C WAI〈Captions/Subtitles〉。閱讀定義、自動字幕不足、檔案與樣式段。採用字幕內容、必要非語言聲音、同步與人工校對，以及播放器呈現需實測。未觀看頁內示例影片，也不由本次文字檢查宣稱已符合整套 WCAG。[正文](https://www.w3.org/WAI/media/av/captions/)
+
+### T29 YouTube 上傳規格
+
+YouTube 官方〈Recommended upload encoding settings〉。閱讀容器、視音編碼、frame rate、畫幅及 SDR 色彩段。採用以平台交付 profile 核對、保留母版的思路；具體編碼候選按 SDR／HDR 與成片需求處理，不由該頁推定來源色彩或新增影格。[正文](https://support.google.com/youtube/answer/1722171?hl=en)
+
+FFmpeg 官方網頁兩個入口逾時，未據搜尋摘要增加參數。另實查本機 ffprobe CLI 的 JSON／format／streams／frames 選項及 ffmpeg ebur128 的 true peak 選項；相關命令只是本機量測入口，不是表演、聲音可懂度或播放器驗收證據。新增內容見 [素材與成片交接](media-handoff.md)。
