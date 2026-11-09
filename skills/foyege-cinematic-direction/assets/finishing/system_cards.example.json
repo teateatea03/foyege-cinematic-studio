@@ -1,0 +1,36 @@
+{
+  "width": 960,
+  "height": 540,
+  "fps": 24,
+  "frame_count": 144,
+  "cues": [
+    {
+      "start": 0,
+      "end": 48,
+      "style": "boot",
+      "title": "系統啟動，身分確認。",
+      "detail": "最新任務：電子偶像——ひとみ。"
+    },
+    {
+      "start": 48,
+      "end": 72,
+      "style": "error",
+      "title": "ERROR / 情緒模組",
+      "detail": "……這不在原本的契約裡吧？！"
+    },
+    {
+      "start": 72,
+      "end": 120,
+      "style": "hold",
+      "title": "權限不足。",
+      "detail": "休眠申請：等待主人回覆"
+    },
+    {
+      "start": 120,
+      "end": 144,
+      "style": "hold",
+      "title": "ひとみ.exe",
+      "detail": "已重新啟動 / 下一項需求待命"
+    }
+  ]
+}

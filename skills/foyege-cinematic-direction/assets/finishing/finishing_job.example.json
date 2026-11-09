@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "take_id": "SC01_SH03_TAKE_A_DRAFT",
+  "timing": {
+    "fps_num": 24,
+    "fps_den": 1,
+    "frame_count": 124
+  },
+  "acceptance": "unreviewed",
+  "roles": {
+    "C1": "main subject; bind actual identity before use"
+  },
+  "artifacts": [
+    {
+      "id": "source_picture",
+      "role": "source",
+      "path": "input/source.mp4"
+    },
+    {
+      "id": "original_audio",
+      "role": "audio",
+      "path": "input/original.wav"
+    },
+    {
+      "id": "C1_reference",
+      "role": "reference",
+      "path": "input/C1.png"
+    },
+    {
+      "id": "native_settings_and_versions",
+      "role": "settings",
+      "path": "settings/native_job.json"
+    },
+    {
+      "id": "C1_completed_stage_manifest",
+      "role": "stage",
+      "path": "stage/C1/manifest.json"
+    },
+    {
+      "id": "C1_completed_stage_payload",
+      "role": "stage",
+      "path": "stage/C1/payload.safetensors"
+    }
+  ],
+  "review": {
+    "gaze": "stimulus then eyes, head follows; bind actual frame range",
+    "mouth": "restrained corner motion; preserve hold",
+    "occlusion": "lost subject retains source pixels",
+    "continuity": "bind accepted preceding take and exact context trim"
+  }
+}

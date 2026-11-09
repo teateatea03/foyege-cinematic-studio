@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-09",
+  "status": "bounded_tools_verified; native inference and acting pending",
+  "regression_tests": 11,
+  "gpu_inference": false,
+  "new_model_downloads": false,
+  "services_started": false,
+  "native_visible_mask": {
+    "source_revision": "3a23f333537d9a715aad7ce79af8d9ec891d9ad8",
+    "module_sha256": "2a24d1b52e3a47a9f3e8813115c1c92472c05579aac1ed8cbe6e3bab62681871",
+    "frame_count": 12,
+    "size": [
+      160,
+      90
+    ],
+    "device": "cpu",
+    "cuda_initialized": false,
+    "totals": {
+      "protected_pixels": 151800,
+      "protected_changed": 0,
+      "white_changed": 0,
+      "formula_mismatch": 0,
+      "candidate_changed_pixels": 30000
+    },
+    "protected_originally_changed_pixels": 9000,
+    "audio_test": "sentinel object identity only; no actual PCM test",
+    "scope": "12 synthetic CPU frames; no detector, H3 sampling, video PTS or acting validation"
+  },
+  "system_cards": {
+    "frame_count": 144,
+    "fps": 24,
+    "size": [
+      960,
+      540
+    ],
+    "repeated_frames_matching": 144,
+    "hold_frames": [
+      72,
+      120
+    ],
+    "hold_frame_hash_count": 1,
+    "font_name": "msjh.ttc",
+    "font_sha256": "1fd5fc7046e0eea753988ee06d1a5a731df68475614e2174fbba9b4800f392ac",
+    "pillow": "12.2.0",
+    "python": "3.13.11",
+    "configuration_sha256": "ed30d5adea5549d69e32b370c5eeb44dc423e18c9ebca804358d5e5830d4149d",
+    "rgb_sequence_sha256": "84a97bfb8bb9a2dcb362e706242069c11e9ef83bc2655c53e3470c528334e152",
+    "preview_encoded_frames": 74,
+    "preview_duration_ms": 5999,
+    "visual_review": "9 sample contact frames inspected; full-motion human review not completed",
+    "audio": null,
+    "song_sync": "not aligned; illustrative draft"
+  },
+  "limits": [
+    "take guard verified only explicit synthetic files; no real H3 Stage Load or cold recovery this turn",
+    "native face compositor tested with synthetic rectangles, not face detection or repair",
+    "PNG8 audit does not verify PTS, audio, tracking, color management or performance",
+    "no GPU benchmark or automatic take acceptance"
+  ],
+  "installation_sync": [
+    {
+      "installation": "codex",
+      "unchanged_existing_foyege_files": 34,
+      "changed_common_references": 2,
+      "added_files": 8,
+      "mv_existing_bytes_preserved": true
+    },
+    {
+      "installation": "claude",
+      "unchanged_existing_foyege_files": 31,
+      "changed_common_references": 2,
+      "added_files": 8,
+      "mv_existing_bytes_preserved": true
+    }
+  ],
+  "package_file_sha256": {
+    "scripts/take_guard.py": "e3ef3fd2c7f4a2d6bdc04fb73c78453ae272531d572cfa9dbe8289c557df6b83",
+    "scripts/audit_visible_face.py": "c2c1e4e8e403f6d5c15db874e3e6d0458851692e1b46df0193086fead3a7b9c9",
+    "scripts/render_system_cards.py": "b96e48c6a28c968553dbd38a17a97d74b914ac8f7f3ee7a94f9f051123a66a06",
+    "tests/test_finishing.py": "8e4e3c3873832cd2ce0bd13a18ec8cf7762f15310cf0462b38a37c3e71b18aad",
+    "tests/check_native_visible_face.py": "c1ae10250ab8f5dbd191577d26b7617a5cf96b004e4f40bc4368d161f2638afa",
+    "assets/finishing/system_cards.example.json": "ed30d5adea5549d69e32b370c5eeb44dc423e18c9ebca804358d5e5830d4149d",
+    "assets/finishing/finishing_job.example.json": "5d435fc0c805b775531e0af3abc7b6c1e27d9b9cea1b45a89b9cd3f79d635f8f"
+  }
+}

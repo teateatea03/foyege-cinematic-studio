@@ -37,6 +37,8 @@ description: 設計 MV 的畫面主體、故事與歌曲關係、時間結構、
 
 歌曲會中斷時，另外記錄停點、怎麼停、中斷多久、這段演什麼、怎麼接回音樂，以及影片總長度。影片版和純音樂版可以不同，要分開記錄版本。
 
+方向已確定需要系統介面、ERROR 或字卡動畫時，可用 [本機字卡範例與驗收](../foyege-cinematic-direction/references/finishing-tools.md)。先沿用主音軌；示例六秒時間線屬 DRAFT，按實際歌曲幀界改寫，不讓範例決定 MV 形式。
+
 ## 交接
 
 - 故事和場次：[cinematic-screenwriting](../cinematic-screenwriting/SKILL.md)
