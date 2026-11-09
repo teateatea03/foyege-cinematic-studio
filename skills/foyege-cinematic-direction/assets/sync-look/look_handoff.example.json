@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "look_group": "ROOM_DAY_REVERSE_DRAFT",
+  "world_light_note": "KEY_WINDOW_WEST 綁同一世界窗位；反打不把光源跟相機搬動。位置與方向待場景母本綁定。",
+  "baseline": {
+    "working_space": null,
+    "view_transform": null,
+    "display": null,
+    "world_light_id": "KEY_WINDOW_WEST",
+    "color_config_sha256": null,
+    "output_color": {
+      "primaries": null,
+      "transfer": null,
+      "matrix": null,
+      "range": null
+    }
+  },
+  "shots": [
+    {
+      "shot_id": "SH_A",
+      "working_space": null,
+      "view_transform": null,
+      "display": null,
+      "world_light_id": "KEY_WINDOW_WEST",
+      "color_config_sha256": null,
+      "input_color": {
+        "primaries": null,
+        "transfer": null,
+        "matrix": null,
+        "range": null
+      },
+      "input_transform": null,
+      "output_color": {
+        "primaries": null,
+        "transfer": null,
+        "matrix": null,
+        "range": null
+      },
+      "baked_looks": [],
+      "planned_looks": [
+        {
+          "id": "LOOK_ROOM_v1_UNBOUND",
+          "sha256": null
+        }
+      ],
+      "intentional_changes": {}
+    },
+    {
+      "shot_id": "SH_B",
+      "working_space": null,
+      "view_transform": null,
+      "display": null,
+      "world_light_id": "KEY_WINDOW_WEST",
+      "color_config_sha256": null,
+      "input_color": {
+        "primaries": null,
+        "transfer": null,
+        "matrix": null,
+        "range": null
+      },
+      "input_transform": null,
+      "output_color": {
+        "primaries": null,
+        "transfer": null,
+        "matrix": null,
+        "range": null
+      },
+      "baked_looks": [],
+      "planned_looks": [
+        {
+          "id": "LOOK_ROOM_v1_UNBOUND",
+          "sha256": null
+        }
+      ],
+      "intentional_changes": {}
+    }
+  ]
+}

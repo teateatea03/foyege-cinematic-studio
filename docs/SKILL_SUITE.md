@@ -40,6 +40,7 @@
 | 四分軌統計 | numpy、soundfile、librosa + 對齊 stereo WAV，見 [工具邊界](../skills/song-arrangement/references/tools.md) |
 | 剪輯／編碼 | 讀者已裝的 FFmpeg／FFprobe、剪輯器或 OpenMontage；OpenMontage 原始碼不隨包附帶 |
 | 後製來源／像素／字卡 | source guard 用 stdlib；PNG audit 用 NumPy＋Pillow，字卡用 Pillow＋自有 CJK 字體；[操作與限制](../skills/foyege-cinematic-direction/references/finishing-tools.md)；可選原生校準需已審 T8 原始碼和 PyTorch |
+| 聲畫／光色交接準備 | Python stdlib 的 [cue 與 look 核對](../skills/foyege-cinematic-direction/references/sync-and-look.md)；音訊／影片／色彩實驗及內容驗收另行執行 |
 | 實際生成／表演 | 使用者既有素材、模型、節點、聲音與 rig；先核對當前工具能力及授權 |
 
 ## 路由例子

@@ -77,6 +77,8 @@ Claude 使用相同目錄格式，將 destination 改為其技能根目錄，例
 
 [後製工具與瞳字卡範例](skills/foyege-cinematic-direction/references/finishing-tools.md)：來源／階段檔案 guard、可見臉 PNG 全序列核對、可重現的六秒 DRAFT 字卡；附原生合成校準與失敗案例測試。[驗證條件](docs/experiments/2026-11-09-finishing/README.md)
 
+[聲畫對齊與跨鏡光色已備妥](skills/foyege-cinematic-direction/references/sync-and-look.md)：整數 sample／有理數幀率換算、預定與觀察分欄、光色基準和重複 look 核對，附兩份 DRAFT JSON 及待測案例；目前只通過規格／算術檢查，媒體實驗待有空時執行。
+
 ## 證據與限制
 
 2026-11-09 補齊 SAM3D／RefMod，已完成 5080 推論、GLB／Blender 表情快照及 RefMod 儲存／讀檔／生成。完整參考可作基準，pooled16 出現臉眼失真；瞳角色轉接、長鏡與精準微表情仍待驗收。[結果、版本與六份 API 工作流](docs/experiments/2026-11-09-sam3d-refmod/README.md)

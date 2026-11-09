@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "shot_id": "HITOMI_BRIDGE_REACTION_DRAFT",
+  "audio": {
+    "asset_id": "MASTER_UNBOUND",
+    "sha256": null,
+    "sample_rate": 48000
+  },
+  "timeline": {
+    "mode": "constant_audio_rate_cfr",
+    "fps": {
+      "num": 24,
+      "den": 1
+    },
+    "start_frame": 0,
+    "frame_count": 144,
+    "audio_in_sample": 0,
+    "audio_playback_rate": {
+      "num": 1,
+      "den": 1
+    }
+  },
+  "events": [
+    {
+      "id": "instruction_end",
+      "source_sample": 48024,
+      "text": "請微笑尾音結束；此 sample 僅示意",
+      "evidence": "provisional"
+    }
+  ],
+  "reactions": [
+    {
+      "id": "gaze_stops",
+      "trigger": "instruction_end",
+      "planned_frame": 25,
+      "hold_end_frame": 32,
+      "observed_frame": null,
+      "intent": "目光維持原對象；不是看向鏡頭"
+    },
+    {
+      "id": "head_follows",
+      "trigger": "instruction_end",
+      "planned_frame": 29,
+      "hold_end_frame": 40,
+      "after_reaction": "gaze_stops",
+      "min_gap_frames": 1,
+      "observed_frame": null,
+      "intent": "依當鏡需要才用頭後跟；並非每個反應都必須轉頭"
+    },
+    {
+      "id": "smile_restraint",
+      "trigger": "instruction_end",
+      "planned_frame": 34,
+      "hold_end_frame": 60,
+      "observed_frame": null,
+      "intent": "非發音空隙的示例；正式唱段須按已鎖嘴型調整"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-10",
+  "mode": "preparation_only",
+  "stdlib_regression_tests": 13,
+  "cli_checks": "fresh processes, review exit 1 and no-overwrite exit 2",
+  "new_media_experiments": false,
+  "media_files_read": false,
+  "gpu_work_started": false,
+  "model_downloads": false,
+  "services_started": false,
+  "new_dependencies": [],
+  "behavior_evaluation": "not performed; deterministic arithmetic and declared metadata only",
+  "content_acceptance": "unmeasured",
+  "installation_sync": [
+    {
+      "installation": "codex",
+      "modified_existing_references": [
+        "references/acting-beats.md",
+        "references/department-handoffs.md"
+      ],
+      "original_reference_bytes_preserved": true,
+      "added_preparation_files": 6,
+      "repaired_missing_public_references": [],
+      "other_original_files_unchanged": 42
+    },
+    {
+      "installation": "claude",
+      "modified_existing_references": [
+        "references/acting-beats.md"
+      ],
+      "original_reference_bytes_preserved": true,
+      "added_preparation_files": 6,
+      "repaired_missing_public_references": [
+        "references/camera-movement.md",
+        "references/crew-workflow.md",
+        "references/department-handoffs.md"
+      ],
+      "other_original_files_unchanged": 40
+    }
+  ],
+  "package_file_sha256": {
+    "scripts/acting_cues.py": "8dc251f90b06f457c558012ff7c2ed4a1defeed332368c11d70b65c18cdd8c0d",
+    "scripts/look_handoff.py": "39b9be6282a8e57effbf436d109487bbbc9fdccf08dcfc6eb13a54492884e7a9",
+    "tests/test_sync_look.py": "c51185b530731e4c4945eff2fd42f90b1ed9e051060cadda9b503c2616754a03",
+    "references/sync-and-look.md": "876b676d8027bf7d68f8d2c2193c3bdb1fba3d213cff368489e14bb79166cad0",
+    "assets/sync-look/acting_cues.example.json": "2724209c53c8fbffe1b10500be307ba0242a41b3a262b541b577f36b500186cd",
+    "assets/sync-look/look_handoff.example.json": "4fe0f10a6140cad9e720088ca7f8f0fad01056f2946c16a625f9920043fd837c"
+  },
+  "deferred": [
+    "actual audio identity and word alignment",
+    "actual CFR/PTS and lip sync",
+    "eye/head/mouth timing and full playback",
+    "actual source color tags and OCIO/look pipeline",
+    "cross-shot lighting and color appearance",
+    "prior native H3 cold recovery and real face preservation"
+  ]
+}
