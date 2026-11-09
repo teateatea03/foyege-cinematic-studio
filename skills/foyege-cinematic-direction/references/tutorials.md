@@ -137,3 +137,15 @@ New York Film Academy，〈The Importance Of Subtext For Actors〉，2016-03-25�
 Sundance Institute，Jessica Herndon 訪問 Affonso Gonçalves，2026-07-30。閱讀文章引言與「Is there a piece of advice…」問答，採用拍攝／生成前確認鏡頭要取得的反應、行動或話語效果。本文未把訪談延伸為固定剪接秒數或每句切反應鏡的規範。[訪談](https://www.sundance.org/blogs/affonso-goncalves-on-bringing-an-editors-eye-to-the-sundance-institute-directors-lab/)
 
 落地至 [表演參考、發音與剪接選擇](performance-transfer.md)，由微表演與話輪頁按需引入。沒有新增平台依賴或本機生成品質主張。
+
+## 2026-11-09 KakuDrop 案例適配
+
+### T23 多視角表演與 AI 轉譯案例
+
+[Kaku Drop 原貼文](https://x.com/KakuDrop/status/2118736576876531790/video/1) 由公開 yt-dlp description 取得：作者自述 4DGS × AI、15 台相機拍攝上半身、最後 Seedance 2.5 輸出；提及 Codex 協助資料管理，但未提供腳本。這些屬製作者主張，不是由成片驗出的管線。
+
+本次取樣檢視約 11.7 秒成片：全片每 0.5 秒共 24 張；1.5–2.7 秒每 0.1 秒共 13 張；5.8–6.5 秒每 0.1 秒共 8 張，另看 Video Watch 四張及 REA 聯絡表，重疊時間不重複計覆蓋。可見推近、拉遠、側背視角、笑、單眼閉合與鼓腮，以及盤腿全身。沒有連續順播、ASR 或聽音，外部 VLM 關閉；不能驗證原始表演保留率、聲畫卡點或隱藏切點。
+
+另讀 [4D-GS 作者頁](https://guanjunwu.github.io/4dgs/) 的動態表示與新視角說明，及 [MetaHuman 官方表演頁](https://www.metahuman.com/animate) 的臉部捕捉／rig 能力。兩者只作概念辨識，不證明本案例使用該篇 4D-GS、MetaHuman，或本機已有相同部署；不採用其效能宣稱。
+
+採用的是本技能原創的「捕捉範圍、表演與機位分軌、各層事件對齊、最終 take 承接」工作卡，見 [分開驗收](performance-transfer.md#表演機位與生成分開驗收)。不將十五相機、4DGS 或 Seedance 設成依賴，也不把大表情展示等同克制微反應。沒有原始多機片、重建工程、生成輸入及提示詞，相關欄位維持未知。

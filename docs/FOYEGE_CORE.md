@@ -31,6 +31,8 @@ Foyege24 的公開白模教學是本專案的主線。[來源 S4](../skills/foye
 
 從場景到鏡頭時，另查觀眾與人物各在哪一點取得資訊，必要選擇／動作／反應由哪個可用區間承擔。同框微反應安排主要讀點，補鏡保留能比對的動作重疊。沿用空間、外觀、表演分工，見 [場景到鏡頭覆蓋](../skills/foyege-cinematic-direction/references/scene-coverage.md)。
 
+多視角或參考片轉譯時，角色表演與攝影機分軌，原始捕捉、中間預演（如有）及生成結果按事件對照；未拍到的部位另驗。接鏡取已接受的成片終態。此為 [KakuDrop 案例的本機適配](../skills/foyege-cinematic-direction/references/performance-transfer.md#表演機位與生成分開驗收)，不新增 Foyege 作者方法主張。
+
 ## 最小工作卡
 
 ```text
