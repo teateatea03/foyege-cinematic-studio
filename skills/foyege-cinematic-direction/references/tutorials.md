@@ -251,3 +251,17 @@ ScreenSkills〈VFX supervisor〉職責、前期及 production 協作段。採用
 Colorist Society〈Role of the Colorist〉Preface、Duties、各製作階段，以及 ScreenSkills〈Post-production supervisor (Post-production)〉職責段。採用攝影／VFX／調色的共用外觀、時間與預算及完整返回責任；不要求全部任務新增調色流程，不把文件盤點當作監看校準或混音／定剪驗收。[調色職責](https://coloristsociety.com/role-of-the-colorist) · [後期統籌](https://www.screenskills.com/job-profiles/browse/post-production/management/post-production-supervisor-post-production)
 
 以上七組於 2026-11-09 查閱相關正文，未觀看其影片或下載附加教材。職能到本機技能的比對是維護者評估；新增 [跨部門製作](crew-workflow.md) 及 [部門交接](department-handoffs.md) 為按需支援，未增加軟體、模型、帳號或自動執行。
+
+## 2026-11-09 HyperFlow Flash 教學交叉核對
+
+### T45 壓縮模型與 runtime 邊界
+
+[官方原始碼與文件快照](https://github.com/Video-Rebirth/hyperflow-h3-flash/tree/703747ee414f895985a4c3b87e59f4fd03fc9f14)：閱讀 README 的架構、執行格式、記憶體／benchmark 條件，以及 integrations 的工作流與配方。分開完整 H3 LoRA 和 Flash；不將 24／32GB 數字外推成 16GB GPU 已通過。
+
+### T46 ComfyUI loader 與模板
+
+[官方節點快照](https://github.com/Video-Rebirth/ComfyUI-HyperFlow-Flash/tree/c807a89653569531b5c61ef691060acf467c552c)：閱讀 README、loader schema、sigmas 與八份 API graph，靜態核對分支權重和配套，沒有載入模型或啟動節點。已有核心 H3 音訊輸入槽不代表 Flash 每個後端都支援混合參考。
+
+### T47 使用者提供的零度解說教學
+
+[影片](https://www.youtube.com/watch?v=n6MeunOm980)，2026-11-09，10:09。閱讀全段自動字幕並查看 16 張分散樣本，以及 08:48–08:53 每 0.5 秒、09:28–09:45 每秒抽幀。字幕誤寫 H3 為 2.3，型號以畫面與上游交叉核對。作者自述 24GB 與末段聲音有問題；未獨立聽審，不採用「16GB 必可用」或速度／音質保證。新增 [Flash 適配](hyperflow-flash.md) 為本專案的原創工具路由與驗收方法，不複製原影片或上游程式。

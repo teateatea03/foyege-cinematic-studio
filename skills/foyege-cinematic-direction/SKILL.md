@@ -22,6 +22,7 @@ description: 結合 Foyege 公開方法與具來源的表演、剪接教學，�
 選擇工具或實際製作時先讀 [本機資源與路由](references/local-resources.md)，核對任務所需的檔案、節點、權重版本、工作流與負載。將「已存在」「節點可載入」「短測通過」「成片已接受」分開記錄。查資料或編寫分鏡時可直接使用有日期的資源表，不必為此啟動模型。GPU 忙碌或使用者保留顯卡給其他工作時，維持文件準備模式，交付提示詞、素材清單與待測方案。啟動服務、載入模型與渲染另依當下可用資源安排。先前實驗授權需配合使用者最新排程。
 
 按需閱讀。
+- 評估 HyperFlow H3 Flash 或編譯其提示詞／工作流時，讀 [Flash 適配](references/hyperflow-flash.md)，分清完整 H3、壓縮模型、參考輸入與已測顯存範圍。
 - 有表演、情緒、眼神、對話或微反應時，讀 [微表演](references/microacting.md)。台詞牽動表情、打斷或欲言又止時，另讀 [詞級觸發與話輪](references/acting-beats.md)。
 - 有多人、運鏡、接觸、遮擋或 Blender 時，讀 [空間與預演](references/spatial-previs.md)。涉及揭露順序、同框注意力或缺鏡／補鏡時，讀 [場景到鏡頭覆蓋](references/scene-coverage.md)。
 - 要決定推拉、搖攝、跟拍、環繞、變焦或移焦的用途、速度與停頓時，讀 [運鏡與表情](references/camera-movement.md)，分開相機路徑、注視目標、角色眼神與模型可控範圍。

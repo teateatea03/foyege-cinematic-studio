@@ -67,6 +67,8 @@ Claude 使用相同目錄格式，將 destination 改為其技能根目錄，例
 
 [劇組職能與缺口盤點](docs/CREW_CAPABILITY_AUDIT_2026-11-09.md) 對照 22 組常見職能，重用既有編劇、製作與場景配套；新增跨部門排程、服化道具重置、光色、聲音 cue 及 VFX／後期返回卡。單鏡需求按需使用。
 
+[HyperFlow H3 Flash 教學補強](docs/RESEARCH_2026-11-09-hyperflow-flash.md)：新增壓縮模型分流、參考圖責任、少步數試產與聲音分項驗收；5080 推論仍待測。
+
 ## 證據與限制
 
 2026-11-09 補齊 SAM3D／RefMod，已完成 5080 推論、GLB／Blender 表情快照及 RefMod 儲存／讀檔／生成。完整參考可作基準，pooled16 出現臉眼失真；瞳角色轉接、長鏡與精準微表情仍待驗收。[結果、版本與六份 API 工作流](docs/experiments/2026-11-09-sam3d-refmod/README.md)
