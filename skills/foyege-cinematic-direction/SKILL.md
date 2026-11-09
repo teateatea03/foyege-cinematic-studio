@@ -24,6 +24,7 @@ description: 結合 Foyege 公開方法與具來源的表演、剪接教學，�
 按需閱讀。
 - 有表演、情緒、眼神、對話或微反應時，讀 [微表演](references/microacting.md)。台詞牽動表情、打斷或欲言又止時，另讀 [詞級觸發與話輪](references/acting-beats.md)。
 - 有多人、運鏡、接觸、遮擋或 Blender 時，讀 [空間與預演](references/spatial-previs.md)。涉及揭露順序、同框注意力或缺鏡／補鏡時，讀 [場景到鏡頭覆蓋](references/scene-coverage.md)。
+- 要決定推拉、搖攝、跟拍、環繞、變焦或移焦的用途、速度與停頓時，讀 [運鏡與表情](references/camera-movement.md)，分開相機路徑、注視目標、角色眼神與模型可控範圍。
 - 要可直接貼用的提示詞、MV、長劇、測試與修正時，讀 [製作與模板](references/production.md)。使用本機 Wan2.2 5B 或 Wan Animate 2 做微表演與續接時，另讀 [本機短測與限制](references/local-tests.md)。
 - 要解釋作者做法或考證時，讀 [來源與證據](references/sources.md)。比較其他技能或追溯新增方法時，讀 [同類技能與採用範圍](references/related-skills.md)。
 

@@ -199,3 +199,23 @@ Creative Commons 官方〈Reusing CC-Licensed Content〉。閱讀 CC attribution
 Adobe Premiere 官方〈Collaborate efficiently with Productions〉。閱讀多工程組織、media referencing、Designed for collaboration 及 local storage 段。採用明確工程寫入責任與版本交回；project locking 只是 Premiere 的具體機制，不當成所有工具、二進位工程或 NAS 同步的共同能力，也不改既有帳號權限。[正文](https://helpx.adobe.com/premiere/desktop/collaborate-with-others/collaborate-using-productions/about-productions.html)
 
 以上四份於 2026-11-09 讀取相關正文。Blender latest packed-data 手冊取得 402，未據舊版搜尋摘要新增「已打包全部依賴」或特定打包功能的規則。原創封存、用途與改稿工作卡見 [project-stewardship.md](project-stewardship.md)；它是按需製作支援，不改 Foyege 核心。
+
+## 2026-11-09 運鏡研究
+
+### T34 相機移動與變焦
+
+Columbia Film Language Glossary。閱讀 Camera Movement 的定義及 Today、Pan Shot 定義、Zoom Shot 定義及 dolly zoom 段，區分實際移動、固定機位轉向與焦距變化。未連續觀看內嵌電影片段；不採用器材比較作本機模型能力證據。[Camera Movement](https://filmglossary.ccnmtl.columbia.edu/term/camera-movement/) · [Pan](https://filmglossary.ccnmtl.columbia.edu/term/pan-shot/) · [Zoom](https://filmglossary.ccnmtl.columbia.edu/term/zoom-shot/)
+
+### T35 攝影師的運鏡選擇
+
+M. David Mullen, ASC，StudentFilmmakers〈Notes on Camera Movement: When to Move the Camera and Why〉。閱讀 motivation、兩部作品案例、A Common Mistake、Other Reasons、Dolly Moves Add Dimension 段。採用敘事／情緒／空間目的與剪輯落點，不把作者個人焦距偏好或器材經驗定成所有媒材規則。[作者署名正文](https://studentfilmmakers.com/notes-on-camera-movement-when-to-move-the-camera-and-why-by-m-david-mullen-asc/)
+
+### T36 移動後停步與反應
+
+The Film Look，2018-06-26〈Coming to a Halt | Motivated Camera Moves〉。閱讀角色與相機同時落點、廣景行動轉近景反應、固定人物／相機變體及穩定器／手持段。採用變化與落點的思考，不複製其追逐場景或書籍內容；未連續觀看影片或 GIF。[作者教學正文](https://www.thefilmlook.com/thefilmlook-video/coming-to-a-halt-motivated-camera-moves)
+
+### T37 靜止搖攝與跟拍
+
+ACMI〈Exploring camera movement〉。閱讀 introduction、Static、Panning、Tilting、Tracking 段，採用靜止也是選擇、搖攝揭露與跟拍焦點的區分。未播放頁內示例，不把平順運動當成所有風格的必要條件。[博物館教學](https://www.acmi.net.au/education/school-program-and-resources/exploring-camera-movement/)
+
+以上四組於 2026-11-09 查閱相關正文。新增 [運鏡與表情](camera-movement.md) 為原創選擇卡與本機適配。Blender 5.2／5.0 Follow Path、latest cameras／F-Curve 及 current API 網頁入口取得 402 或無法存取，未把搜尋摘要當作已讀手冊；本機另用 Blender 5.2.3 的投影與依賴圖實測核對距離／焦距及路徑／目標分離。這不是渲染、速度曲線或生成影片品質證據。

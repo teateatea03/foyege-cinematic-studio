@@ -1,0 +1,84 @@
+{
+  "blender": "5.2.3 LTS",
+  "rendered": false,
+  "gpu_inference": false,
+  "scope": "CPU-only Blender projection and dependency-graph evaluation, not media quality",
+  "projection": {
+    "sensor_width_mm": 36,
+    "sensor_fit": "HORIZONTAL",
+    "resolution": [
+      960,
+      540
+    ],
+    "equal_world_height_m": 1,
+    "start": {
+      "location": [
+        0.0,
+        -6.0,
+        1.600000023841858
+      ],
+      "lens_mm": 50.0,
+      "subject_height": 0.41152262687683105,
+      "background_height": 0.20576128363609314,
+      "background_to_subject": 0.4999999275803554
+    },
+    "dolly_end": {
+      "location": [
+        0.0,
+        -3.0,
+        1.600000023841858
+      ],
+      "lens_mm": 50.0,
+      "subject_height": 0.823045164346695,
+      "background_height": 0.2743483781814575,
+      "background_to_subject": 0.33333332126339127
+    },
+    "zoom_end": {
+      "location": [
+        0.0,
+        -6.0,
+        1.600000023841858
+      ],
+      "lens_mm": 100.0,
+      "subject_height": 0.8230451792478561,
+      "background_height": 0.4115225672721863,
+      "background_to_subject": 0.4999999728426308
+    }
+  },
+  "follow_path": {
+    "samples": [
+      {
+        "offset_factor": 0,
+        "position": [
+          0.0,
+          -6.0,
+          1.600000023841858
+        ],
+        "aim_dot": 1.0
+      },
+      {
+        "offset_factor": 0.5,
+        "position": [
+          2.0,
+          -5.0,
+          1.600000023841858
+        ],
+        "aim_dot": 0.9999999701976776
+      },
+      {
+        "offset_factor": 1,
+        "position": [
+          3.0,
+          -3.0,
+          1.600000023841858
+        ],
+        "aim_dot": 1.0000000596046448
+      }
+    ],
+    "target_move_preserves_path_position": true,
+    "camera_aim_follows_target": true,
+    "animation_speed_profile_tested": false
+  },
+  "all_assertions_passed": true,
+  "verification_script_sha256": "ff89431423ffa27c4fd5bea90beffcdc8c6cca84dccd3cc00b58a2baa963138f"
+}
