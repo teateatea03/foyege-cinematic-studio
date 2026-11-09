@@ -1,5 +1,6 @@
 import argparse
 import hashlib
+import importlib.util
 import json
 import math
 import sys
@@ -7,6 +8,11 @@ from pathlib import Path
 
 import bpy
 from mathutils import Vector
+
+sys.dont_write_bytecode = True
+_spec = importlib.util.spec_from_file_location("render_device", Path(__file__).resolve().parent / "render_device.py")
+rd = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(rd)
 
 
 def vector(value, label):
@@ -42,7 +48,7 @@ def material(name, color):
     result = bpy.data.materials.new(name)
     result.diffuse_color = (*color, 1)
     result.use_nodes = True
-    result.node_tree.nodes["Principled BSDF"].inputs["Base Color"].default_value = (*color, 1)
+    next(node for node in result.node_tree.nodes if node.type == "BSDF_PRINCIPLED").inputs[0].default_value = (*color, 1)
     return result
 
 
@@ -64,6 +70,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--scene", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--no-render", action="store_true", help="Build and save geometry without GPU initialization or rendering")
+    parser.add_argument("--gpu-name", default="", help="GPU name substring; only one device is enabled")
+    parser.add_argument("--backend", default="AUTO", choices=["AUTO", "OPTIX", "CUDA", "HIP", "METAL", "ONEAPI"])
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:])
     raw = args.scene.read_bytes()
     data = json.loads(raw.decode("utf-8-sig"))
@@ -106,7 +115,7 @@ def main():
     bpy.ops.wm.read_factory_settings(use_empty=True)
     scene = bpy.context.scene
     scene.render.engine = "CYCLES"
-    scene.cycles.device = "CPU"
+    render_device = {"device": "NONE", "reason": "geometry-only; rendering not requested"} if args.no_render else rd.configure_cycles(scene, args.gpu_name, args.backend)
     scene.cycles.samples = 8
     scene.render.resolution_x, scene.render.resolution_y = resolution
     scene.render.resolution_percentage = 100
@@ -115,8 +124,9 @@ def main():
     scene.frame_start, scene.frame_end = 1, frames
     scene.world = bpy.data.worlds.new("PrevisWorld")
     scene.world.use_nodes = True
-    scene.world.node_tree.nodes["Background"].inputs[0].default_value = (0.4, 0.4, 0.4, 1)
-    scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.7
+    background = next(node for node in scene.world.node_tree.nodes if node.type == "BACKGROUND")
+    background.inputs[0].default_value = (0.4, 0.4, 0.4, 1)
+    background.inputs[1].default_value = 0.7
     gray = material("neutral_proxy", (0.55, 0.55, 0.55))
     cube("ground", (0, 0, -0.06), (20, 20, 0.1), gray)
     for box in data["boxes"]:
@@ -166,7 +176,7 @@ def main():
         camera.keyframe_insert(data_path="location", frame=frame)
         camera.keyframe_insert(data_path="rotation_euler", frame=frame)
     previews = []
-    for frame in sorted({1, (frames + 1) // 2, frames}):
+    for frame in ([] if args.no_render else sorted({1, (frames + 1) // 2, frames})):
         scene.frame_set(frame)
         filename = f"shot_{frame:04d}.png"
         render(scene, output / filename)
@@ -181,7 +191,8 @@ def main():
     scene.camera = map_camera
     for label in labels:
         label.hide_render = False
-    render(scene, output / "topview.png")
+    if not args.no_render:
+        render(scene, output / "topview.png")
     for label in labels:
         label.hide_render = True
     scene.camera = camera
@@ -189,11 +200,13 @@ def main():
     bpy.ops.wm.save_as_mainfile(filepath=str(output / "scene.blend"))
     manifest = {
         "status": "completed", "blender": bpy.app.version_string,
+        "render_device": render_device,
         "input_sha256": hashlib.sha256(raw).hexdigest(),
         "fps": fps, "frames": frames, "duration_seconds": frames / fps,
         "resolution": resolution, "actor_ids": [a["id"] for a in data["actors"]],
-        "previews": previews, "topview": "topview.png", "scene": "scene.blend",
-        "validation_scope": "geometry and camera previews; facial performance untested"
+        "previews": previews, "topview": None if args.no_render else "topview.png", "scene": "scene.blend",
+        "rendered": not args.no_render,
+        "validation_scope": "geometry only; no rendered previews" if args.no_render else "geometry and camera previews; facial performance untested"
     }
     (output / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(manifest, ensure_ascii=False))

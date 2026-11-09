@@ -11,7 +11,7 @@
 - 本機 film-production 入口及 production-design、shot-card、dialogue-production、post-and-delivery、testing-and-review、sources。
 - 本機 set-design、music-designer、editing-pipeline 的入口；沒有因此執行這些技能的建模、音訊或圖像流程。
 
-film-production 等本機配套不在本公開包內，也不是使用公開 Foyege 的必要依賴；新參考可獨立使用。本次沒有審計所有已裝技能或每個工具執行環境。特別核對 editing-pipeline：它處理單張圖像編輯，不當成影片剪輯功能的證據。
+盤點當時 film-production 等配套只在本機。後續已整理為九技能公開套件，實際收錄與安裝以 [劇組技能組](SKILL_SUITE.md) 為準；下表保留盤點當時的證據狀態。本次沒有審計所有已裝技能或每個工具執行環境。特別核對 editing-pipeline：它處理單張圖像編輯，不當成影片剪輯功能的證據。
 
 「已有規劃」表示文件提供方法，不表示已經實作／驗收整部作品；「需補交接」不表示整個部門原先完全不存在；「專項待驗」不能靠新增表單改成已通過。
 

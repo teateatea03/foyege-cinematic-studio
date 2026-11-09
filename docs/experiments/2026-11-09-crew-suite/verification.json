@@ -1,0 +1,204 @@
+{
+  "date": "2026-11-09",
+  "scope": "packaging and tool execution; no model behavior or final-film quality evaluation",
+  "python": "3.13.11",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "Pillow": "12.2.0",
+    "numpy": "2.4.6",
+    "soundfile": "0.13.1",
+    "librosa": "0.11.0"
+  },
+  "skill_count": 9,
+  "installed_source_files": 42,
+  "checks": [
+    {
+      "name": "yaml-cinematic-screenwriting",
+      "exit": 0
+    },
+    {
+      "name": "yaml-dance-choreography",
+      "exit": 0
+    },
+    {
+      "name": "yaml-film-production",
+      "exit": 0
+    },
+    {
+      "name": "yaml-foyege-cinematic-direction",
+      "exit": 0
+    },
+    {
+      "name": "yaml-music-designer",
+      "exit": 0
+    },
+    {
+      "name": "yaml-mv-presentation",
+      "exit": 0
+    },
+    {
+      "name": "yaml-openmontage",
+      "exit": 0
+    },
+    {
+      "name": "yaml-set-design",
+      "exit": 0
+    },
+    {
+      "name": "yaml-song-arrangement",
+      "exit": 0
+    },
+    {
+      "name": "count-sheet",
+      "exit": 0
+    },
+    {
+      "name": "score-stats",
+      "exit": 0
+    },
+    {
+      "name": "sunlight-tests",
+      "exit": 0
+    },
+    {
+      "name": "plan",
+      "exit": 0
+    },
+    {
+      "name": "to-previs",
+      "exit": 0
+    },
+    {
+      "name": "blender-set",
+      "exit": 0
+    },
+    {
+      "name": "blender-foyege",
+      "exit": 0
+    }
+  ],
+  "installer_tests": {
+    "passed": 5,
+    "selected_entry_link_closure_checks": 9
+  },
+  "clean_install_missing_links": [],
+  "local_source_changes": [],
+  "blender_set": {
+    "version": "5.2.3 LTS",
+    "counts": {
+      "PASS": 7,
+      "WARN": 1,
+      "FAIL": 0
+    },
+    "render_device": {
+      "device": "NOT_USED",
+      "reason": "no-render geometry checks"
+    },
+    "input_sha256": "ac1a8daba2751e855ad25017879ec687869306286d864b5a4a93ff1ebac5986d",
+    "warning": "C2 A1 visible sampled surface 0.20; not an accepted shot"
+  },
+  "blender_previs": {
+    "status": "completed",
+    "blender": "5.2.3 LTS",
+    "render_device": {
+      "device": "NONE",
+      "reason": "geometry-only; rendering not requested"
+    },
+    "input_sha256": "c5af20dbc765f4fe32dffebdff39399b8c58af37bde8b255206c683426a40f9f",
+    "fps": 24,
+    "frames": 121,
+    "duration_seconds": 5.041666666666667,
+    "resolution": [
+      1280,
+      704
+    ],
+    "actor_ids": [
+      "A1"
+    ],
+    "previews": [],
+    "topview": null,
+    "scene": "scene.blend",
+    "rendered": false,
+    "validation_scope": "geometry only; no rendered previews"
+  },
+  "arc_compare": {
+    "exit": 0,
+    "input": "four synthetic stereo PCM16 WAV stems; 40 seconds, 22050Hz, 882000 sample frames each",
+    "human_listening": false,
+    "quality_evaluation": false
+  },
+  "rendering_performed": false,
+  "external_openmontage_runtime_tested": false,
+  "skill_file_sha256": {
+    "skills/foyege-cinematic-direction/SKILL.md": "60557cba6b8ac3e306aafa789ade1d913ada0dc7eaed1682f6fad24b6962e8e1",
+    "skills/foyege-cinematic-direction/agents/openai.yaml": "41ad87fa056a4f2abcdbc99a05f10e90df0730646fb7602a2ebb4fb671daf722",
+    "skills/foyege-cinematic-direction/assets/two-person.json": "664c63f333e611ebfabf08020cc9f7bc5edf68d385aadd70d29bfca8164535fc",
+    "skills/foyege-cinematic-direction/references/acting-beats.md": "fb6edb2a1dc8dbc36f2bf295cd2604045bf1885e11bc6fb8831cdc16ee80aa9d",
+    "skills/foyege-cinematic-direction/references/camera-movement.md": "85e34d0cfb0b89eff488b4a84c97aec29dcb7a18f61b9c8ef20a36df8fe69d7f",
+    "skills/foyege-cinematic-direction/references/crew-workflow.md": "befac5a5ae99258f14056690a080fe0f10b47e15b15917bcb03a9d1aebe89b58",
+    "skills/foyege-cinematic-direction/references/department-handoffs.md": "94b8ebe43dc76169b643d75b8e738ded1862a08a54fd8e2306e74b3c809d1a8b",
+    "skills/foyege-cinematic-direction/references/local-resources.md": "6554c26e3519a29188e38b3767e2c3e2ad5f8432302d733b5c4af9bdafe7183b",
+    "skills/foyege-cinematic-direction/references/local-tests.md": "1955c69e11b726578bbb3c728053d88a01590a012c827c5b685e3b590f4de661",
+    "skills/foyege-cinematic-direction/references/media-handoff.md": "a66d7ed46632942349589b660213df53cd94f5cc2290c1a5c1231952457281be",
+    "skills/foyege-cinematic-direction/references/microacting.md": "a9142e4c4841b379a896e78ccdb9f3ee28ab7841fdb92aec66b55f1af031c46f",
+    "skills/foyege-cinematic-direction/references/performance-transfer.md": "b8fb94a6644486bc1e018ec159506e502ad6897b996a2a4c7f357926c9adef55",
+    "skills/foyege-cinematic-direction/references/production.md": "3d8a25f09659d5118b610da6cf2e4968fcac8d20bb7198e9032ef902fb3a7cb5",
+    "skills/foyege-cinematic-direction/references/project-stewardship.md": "f12bd087cf1a7bd347a801c6c965cc6a7f7b862d716c075c11fb881c09467e59",
+    "skills/foyege-cinematic-direction/references/related-skills.md": "6e0ed773bb6fc35e864078ab77a8f97061eda2b225c62aaf967c90ae3843adeb",
+    "skills/foyege-cinematic-direction/references/scene-coverage.md": "ed50d10fbc5dcdbb1646ed29db80dafe6771bd73f375656cd9f202751afeaf00",
+    "skills/foyege-cinematic-direction/references/sources.md": "dea4a4551c6286eb8e42856e0a037d514f367a33497f1059ffb93037834bc811",
+    "skills/foyege-cinematic-direction/references/spatial-previs.md": "0d36a02ebd63525f43c2958012174f6d31ab0a82845587b238bca2f90846171f",
+    "skills/foyege-cinematic-direction/references/tutorials.md": "5e43a3144703411e0c850d5f4b75b14f40f2b242b7b3b58ae52367aa22d73582",
+    "skills/foyege-cinematic-direction/scripts/build_previs.py": "0e69fff0229ee82efa321f5b83de443254f7bf7bf87d44587fc2ee5eb7a16f7c",
+    "skills/foyege-cinematic-direction/scripts/render_device.py": "c5c12c665d0ac6023d5bf60e7f89b0be0ef34e1c51617231b8dfd58b3b90d5bd",
+    "skills/foyege-cinematic-direction/assets/occlusion-test/A_occluded.json": "9067524c98dbda2619d9f8970309c82229a0af16954fdce967729502b303089b",
+    "skills/foyege-cinematic-direction/assets/occlusion-test/B_clear.json": "3a2bb8c3459a146166a82cf7522f28c3371581d3496d691266887bbfb75e68f7",
+    "skills/cinematic-screenwriting/SKILL.md": "559ecb364874dbf20e67943a777a4e58f4baa9a16f1e0ad8c97e3e01f8b9d50e",
+    "skills/cinematic-screenwriting/references/practice.md": "065b39d0d2992146329868b5090b720b85a0f7de8e5fc9a7ef17dc921756e0e3",
+    "skills/film-production/SKILL.md": "5a76a556ecac3f272f896a493a7138cfdd5037f9db082479d3b5f7b55269fc51",
+    "skills/film-production/references/dialogue-production.md": "f895519d06059da4dd97fcdae0138302dd628f920a32998a313e34deea115316",
+    "skills/film-production/references/directing-and-prompts.md": "c7eea0dffed8bcf458c335104599a0433bf34e7b80ec0ed506c8d5124643300a",
+    "skills/film-production/references/post-and-delivery.md": "f9da5d1105247410e17bb3112b001a69aab7742cb4274258e9646eec34194211",
+    "skills/film-production/references/production-design.md": "e46715100a01588c8312fc47cc7cc87c98c59a956dcbbe1b869d65cf22ebab39",
+    "skills/film-production/references/shot-card.md": "6e7a47544867ffcc31da55590832765a2db05271b7ad2501725db76203faa5da",
+    "skills/film-production/references/sources.md": "7448d53afd6561800c0d66b794654e96f5b12ca42b08bac9a3f66cc98fb03653",
+    "skills/film-production/references/testing-and-review.md": "b127baa93aac4036f7c8ea871036b0288ac0b634a212aaae758d821123a155d9",
+    "skills/set-design/SKILL.md": "6ed19459f8e773905475cef6cbc5b9f365b093797353a8d09513542f0ba239eb",
+    "skills/set-design/assets/sample_room.json": "ac1a8daba2751e855ad25017879ec687869306286d864b5a4a93ff1ebac5986d",
+    "skills/set-design/references/ai-handoff.md": "cff8e0ff8ceb3dd0c23a0b03be2d763e2725cc36568d00d82eb03011eb47f92f",
+    "skills/set-design/references/blender-blockout.md": "3b8e77697008a6c49bc276c862a44dad86c395008c5055dc862d3e358a021dab",
+    "skills/set-design/references/set-json.md": "135a3fa9e7eb3eda54937424f4957961b2591a7adfafeb8739bdd9b9192545c2",
+    "skills/set-design/references/sources.md": "cf69e67c86dd3c6f039379ba2237cb1d04ff2d467c0039de1fa586253625cffc",
+    "skills/set-design/references/space-planning.md": "1b8bce5c6ed48a68db1aacf0634462368f467d13a070a554c2022b29d44b783f",
+    "skills/set-design/scripts/build_set.py": "db6ddf8f38cc3234f548718f834ccec379d3b84aae227d31f9e2cce5a94d6cee",
+    "skills/set-design/scripts/furniture_geometry.py": "d8bc3f71ab5c7f6aba1d064cbd8304cabebb98d62f8d46077954d3bd901e3aa3",
+    "skills/set-design/scripts/overlay_check.py": "b35b5ca367682c7786a8bac8dd45f164c25a8bdf05b91696e8a57570bd0a2dcc",
+    "skills/set-design/scripts/plan_check.py": "50b994eea1335dfab8e27da71612e8ea94e5db77dbb337478f592f8589e69208",
+    "skills/set-design/scripts/render_device.py": "c5c12c665d0ac6023d5bf60e7f89b0be0ef34e1c51617231b8dfd58b3b90d5bd",
+    "skills/set-design/scripts/sunlight_check.py": "dff42da3209c401ca34e4937178e24e73e2afe1bee9aed49dffe0c4622603cff",
+    "skills/set-design/scripts/to_previs.py": "b112eb22c0199f308cf6c4adef37bec70658d1aa4ceea2dd1ff3d658e688ed41",
+    "skills/set-design/tests/test_sunlight_check.py": "8b7213e940a77dee8effcea546aaf8ea10a4f212b8844bfa2a644a9cb630f843",
+    "skills/mv-presentation/SKILL.md": "c53ed855d5f9960a84052f96cc5a5c4ac46d433f1e435d3e1b904318302af0a2",
+    "skills/mv-presentation/references/forms.md": "5c2748fdec66c11f3b575f44a9e32f19097b56e4aabf55dc823e81cb0ab98c44",
+    "skills/dance-choreography/SKILL.md": "c7e1b8f4c06f293b3fce7b8abfa217cf8c0519789086ef122eb6610c1d24be48",
+    "skills/dance-choreography/references/craft.md": "f51a53495acecb9954edbac5477695f4913472a2edf4b254f56481823c580507",
+    "skills/dance-choreography/references/routes.md": "af989151c2127ad760db6d1099d212e69a9b84b378ec701283b417854e23fa86",
+    "skills/dance-choreography/references/sources.md": "309c88df8f75228d325b24f2431ecb337d725e232459a421bd52835e4c8c349e",
+    "skills/dance-choreography/scripts/count_sheet.py": "9e8e78d5aa0d1be8c32a498b76e63cc39a5687a1913ac6bd802495db1384f80e",
+    "skills/music-designer/SKILL.md": "733ddd4fdde22f0cd14d1548df24115cfeb36116b5eaa5f06bbcb33b391f95b6",
+    "skills/music-designer/references/suno-community-workflow.md": "f9995ec5b4f74ff109ee3c8fda1cf9b56bcaeaad1c9dbbc1bffbbb64ad49c916",
+    "skills/song-arrangement/SKILL.md": "085a3d6b998ac9e9f9227b138dcf64815cfe1de6de1fcbb42fd55bad429b8baf",
+    "skills/song-arrangement/references/f01-case.md": "0061350a6080a200278e2b4a9d6aaa6fc2b10eeb48556a82816c4e2a9f6c1306",
+    "skills/song-arrangement/references/f03-case.md": "c693cb026380f5f67c9901cfffc01843ad84012ddfa4c14dcdba3f71a21efd39",
+    "skills/song-arrangement/references/f04-case.md": "aa7b27bd3d332c753554907c38b2135c4c4cbb2e9f22a286e1a50c399d2d8449",
+    "skills/song-arrangement/references/f05-case.md": "51dfbd3c2a550d32cdb9ee02f60b08fae76180756c55583636dae6e697f8e284",
+    "skills/song-arrangement/references/f06-f07-case.md": "16e57cf7203cdd875e8b4fed7358071e2acdbc4c0e048d56208abebe3abe2ec1",
+    "skills/song-arrangement/references/sources.md": "5494f2be8f5ea015db6769d912662a0cab1dc456522ad9e5c6cc2b0e24f556a1",
+    "skills/song-arrangement/references/suno-reference-prompts.md": "d5c3c6d30baa46d0bd3963da9cfdec2f7ac00b5f70f6ed5b8d13b14a3bf1c35e",
+    "skills/song-arrangement/references/tools.md": "49d83c925481352242a9388a7a76fcfbe35bd16363111806159b747a670b55c0",
+    "skills/song-arrangement/scripts/arc_compare.py": "457a21e2326799a1fa18508e762bb257e31ee17e631f9b2eb4ca967dbc6f866c",
+    "skills/song-arrangement/scripts/score_stats.py": "2b7f2eb093e3bbf4dd0a4bb451b7b23f166dff5d7d4f1718855bb4861f13dc38",
+    "skills/openmontage/SKILL.md": "7b6f7d0186d4ca8b205bdd4a59ebc4195b8bdbf2ffb6f80fdcc98ec607a9689b",
+    "skills/openmontage/references/runtime.md": "5982495c0db27f958740e04e1b82d38b18f2f16984e29f963a6c63693a286bc7"
+  }
+}

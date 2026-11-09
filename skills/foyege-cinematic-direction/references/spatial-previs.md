@@ -63,4 +63,6 @@ if ($LASTEXITCODE -ne 0) { throw 'Sequence render failed' }
 ffmpeg -n -framerate 24 -start_number 1 -i (Join-Path $outputRoot 'sequence/frame_%04d.png') -c:v libx264 -pix_fmt yuv420p (Join-Path $outputRoot 'previs.mp4')
 ```
 
-腳本採低解析度 Cycles CPU 渲染，便於本機測試。需要正式生成參考時按輸入規格調解析度與片長。幾何代理只驗證空間，微表演另以近景影片或實拍試演檢查。
+腳本採低解析度 Cycles，渲染時只啟用一張選定 GPU，NVIDIA 優先 OptiX 再 CUDA；可加 `--gpu-name "YOUR_GPU_NAME"` 及 `--backend`。未指定 GPU 且 Blender 不支援任何配置後端時才允許有紀錄的 CPU；裝置找不到、忙碌、OOM 或渲染錯誤均不自動退 CPU。先核對負載，不能自行停止其他工作。
+
+只需建模與相機動畫時加 `--no-render`：不初始化 GPU、不出 PNG，保留 scene.blend 與 manifest（rendered=false、render_device=NONE）。這不是已驗收的畫面；之後渲染需重新指定可用裝置與設定。需要正式生成參考時按輸入規格調解析度與片長。幾何代理只驗證空間，微表演另以近景影片或實拍試演檢查。

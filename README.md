@@ -15,23 +15,38 @@
 
 [核心方法與檢查](docs/FOYEGE_CORE.md) · [作者來源與閱讀範圍](skills/foyege-cinematic-direction/references/sources.md) · [2026-11-07 研究補強](docs/RESEARCH_2026-11-07.md) · [2026-11-08 YouTube 表演補強](docs/RESEARCH_2026-11-08.md) · [2026-11-09 場景與素材交接](docs/RESEARCH_2026-11-09.md) · [第二輪表演參考補強](docs/RESEARCH_2026-11-09-performance.md) · [KakuDrop 案例適配](docs/RESEARCH_2026-11-09-kakudrop.md) · [製作周邊與交付](docs/RESEARCH_2026-11-09-postproduction.md) · [封存與協作維護](docs/RESEARCH_2026-11-09-stewardship.md)
 
-## 兩個技能
+## 九個劇組技能
 
-- [foyege-cinematic-direction](skills/foyege-cinematic-direction/SKILL.md) 是主入口，負責分鏡、微表演、預演、提示詞與接鏡。
-- [cinematic-screenwriting](skills/cinematic-screenwriting/SKILL.md) 將前提轉為人物選擇、場次與台詞，交接給主入口。
+以 Foyege24 的微表演、空間與接鏡方法為核心，附完整配套目錄：
 
-純文字規劃可直接使用。實際生成先核對使用者擁有的素材、模型、節點與負載。Blender 工具是可選的幾何預演，需要可用的 Blender 執行檔。
+| 技能 | 用途 |
+| --- | --- |
+| [film-production](skills/film-production/SKILL.md) | 製作統籌、副導、工單、排程、測試、成本與交付 |
+| [cinematic-screenwriting](skills/cinematic-screenwriting/SKILL.md) | 人物、場次、台詞及導演交接 |
+| [foyege-cinematic-direction](skills/foyege-cinematic-direction/SKILL.md) | 導演、眼神、微表情、克制反應、運鏡、預演與接鏡 |
+| [set-design](skills/set-design/SKILL.md) | 平面、尺寸檢查、Blender 白模、光線與機位 |
+| [mv-presentation](skills/mv-presentation/SKILL.md) | MV 形式、歌曲時間與聲畫呈現 |
+| [dance-choreography](skills/dance-choreography/SKILL.md) | 拍表、舞譜、動作和鏡頭交接 |
+| [music-designer](skills/music-designer/SKILL.md) | 音樂方向、歌詞節奏、take 比較與混音交接 |
+| [song-arrangement](skills/song-arrangement/SKILL.md) | 編曲起伏、譜面及分軌分析腳本 |
+| [openmontage](skills/openmontage/SKILL.md) | 既有剪輯／時間線／渲染工具的執行介面 |
 
-## 安裝至 Codex
+服化道、燈光、場記、DIT、VFX、調色、聲音等部門也有交接卡。[完整職能、實際工具與依賴](docs/SKILL_SUITE.md)。純文字規劃不需 GPU 或 API key；生成、渲染及剪輯沿用使用者既有且可用的工具，模型與素材另行準備。
 
-將本專案網址交給 Codex，要求安裝上述兩個技能即可。使用 Codex 內建安裝器時，在 Windows PowerShell 執行以下命令，需已有 Python。
+## 安裝至 Codex 或 Claude
+
+需要 Git 與 Python 3.10+。先取得專案，再安裝完整九技能；以下在 PowerShell 執行：
 
 ```powershell
+git clone https://github.com/teateatea03/foyege-cinematic-studio.git
+Set-Location foyege-cinematic-studio
 $env:PYTHONUTF8 = '1'
-py "$env:USERPROFILE\.codex\skills\.system\skill-installer\scripts\install-skill-from-github.py" --repo teateatea03/foyege-cinematic-studio --path skills/foyege-cinematic-direction skills/cinematic-screenwriting
+python tools/install_suite.py --destination "$env:USERPROFILE/.codex/skills"
 ```
 
-安裝器遇到既有同名目錄會停止。更新前先比較現有版本與本專案內容。新技能於下一輪正常載入時可被使用。
+Claude 使用相同目錄格式，將 destination 改為其技能根目錄，例如 `$env:USERPROFILE/.claude/skills`。安裝器複製完整 references、scripts、assets 與 tests，不只 SKILL.md；不安裝外部工具或模型。
+
+只選導演與編劇可加 `--profile director`；指定技能可用 `--skills set-design`，會補齊套件依賴。遇到任一既有同名目錄會在複製前停止，先比較及備份後再更新，不覆蓋舊安裝。新技能於下一次技能清單載入時可用；若未出現，重開工作階段。
 
 ## 使用
 
@@ -67,6 +82,7 @@ Python 3.10 以上安裝 PyYAML 後，在專案根目錄執行。
 ```text
 python -m pip install -r requirements-dev.txt
 python tools/validate.py
+python tools/test_install_suite.py
 ```
 
 驗證涵蓋技能 YAML、內部連結、JSON 與 Python 語法。文字案例另見 [驗證範圍](docs/VALIDATION.md)。模型生成與 Blender 渲染需另外執行。

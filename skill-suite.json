@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "name": "foyege-cinematic-studio",
+  "description": "可安裝的製作、編劇、導演、美術、編舞、音樂與剪輯技能組；執行環境另行核對。",
+  "skills": [
+    {
+      "name": "foyege-cinematic-direction",
+      "role": "導演、微表演、運鏡與連戲",
+      "requires": [
+        "cinematic-screenwriting"
+      ],
+      "path": "skills/foyege-cinematic-direction"
+    },
+    {
+      "name": "cinematic-screenwriting",
+      "role": "劇本、人物、場次與台詞",
+      "requires": [
+        "foyege-cinematic-direction"
+      ],
+      "path": "skills/cinematic-screenwriting"
+    },
+    {
+      "name": "film-production",
+      "role": "製片、副導、鏡頭卡、測試、成本與交付",
+      "requires": [
+        "cinematic-screenwriting",
+        "dance-choreography",
+        "foyege-cinematic-direction",
+        "music-designer",
+        "mv-presentation",
+        "openmontage",
+        "set-design",
+        "song-arrangement"
+      ],
+      "path": "skills/film-production"
+    },
+    {
+      "name": "set-design",
+      "role": "場景平面、尺寸檢查、Blender 白模及預演匯出",
+      "requires": [
+        "foyege-cinematic-direction"
+      ],
+      "path": "skills/set-design"
+    },
+    {
+      "name": "mv-presentation",
+      "role": "MV 呈現選擇與影像企劃",
+      "requires": [
+        "cinematic-screenwriting",
+        "dance-choreography",
+        "foyege-cinematic-direction"
+      ],
+      "path": "skills/mv-presentation"
+    },
+    {
+      "name": "dance-choreography",
+      "role": "編舞、拍表、角色走位與動作交接",
+      "requires": [
+        "foyege-cinematic-direction",
+        "mv-presentation"
+      ],
+      "path": "skills/dance-choreography"
+    },
+    {
+      "name": "music-designer",
+      "role": "歌曲方向、候選比較、音樂與混音交接",
+      "requires": [
+        "song-arrangement"
+      ],
+      "path": "skills/music-designer"
+    },
+    {
+      "name": "song-arrangement",
+      "role": "編曲起伏、譜面／分軌分析與修訂",
+      "requires": [],
+      "path": "skills/song-arrangement"
+    },
+    {
+      "name": "openmontage",
+      "role": "外部剪輯／時間線／渲染與品管執行介面",
+      "requires": [
+        "film-production",
+        "foyege-cinematic-direction"
+      ],
+      "path": "skills/openmontage"
+    }
+  ],
+  "profiles": {
+    "crew": [
+      "film-production",
+      "cinematic-screenwriting",
+      "foyege-cinematic-direction",
+      "set-design",
+      "mv-presentation",
+      "dance-choreography",
+      "music-designer",
+      "song-arrangement",
+      "openmontage"
+    ],
+    "director": [
+      "foyege-cinematic-direction",
+      "cinematic-screenwriting"
+    ]
+  }
+}

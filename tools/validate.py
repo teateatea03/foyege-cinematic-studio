@@ -6,6 +6,8 @@ import json
 import re
 import sys
 import yaml
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from install_suite import load_suite
 
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS = []
@@ -82,8 +84,12 @@ def main():
                 if parsed.fragment and target.suffix == ".md":
                     if unquote(parsed.fragment) not in anchors(target.read_text(encoding="utf-8-sig")):
                         problem(path, f"missing heading: {href}")
-    if COUNTS["skills"] != 2:
-        ERRORS.append(f"expected two skills, found {COUNTS['skills']}")
+    try:
+        _, roster = load_suite(ROOT)
+        if COUNTS["skills"] != len(roster):
+            ERRORS.append("skill count differs from suite manifest")
+    except (ValueError, KeyError, OSError) as exc:
+        ERRORS.append(f"skill-suite.json: {exc}")
     print(json.dumps({"counts": COUNTS, "errors": ERRORS}, ensure_ascii=False, indent=2))
     return bool(ERRORS)
 
