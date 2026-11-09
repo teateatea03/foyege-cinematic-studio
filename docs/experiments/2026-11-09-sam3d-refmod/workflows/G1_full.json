@@ -1,0 +1,188 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "MiniMaxH3RefModsLoader",
+    "inputs": {
+      "mod_2": "(none)",
+      "strength_2": 1.0,
+      "copies_2": 1,
+      "mod_3": "(none)",
+      "strength_3": 1.0,
+      "copies_3": 1,
+      "mod_4": "(none)",
+      "strength_4": 1.0,
+      "copies_4": 1,
+      "mod_5": "(none)",
+      "strength_5": 1.0,
+      "copies_5": 1,
+      "mod_6": "(none)",
+      "strength_6": 1.0,
+      "copies_6": 1,
+      "mod_7": "(none)",
+      "strength_7": 1.0,
+      "copies_7": 1,
+      "mod_8": "(none)",
+      "strength_8": 1.0,
+      "copies_8": 1,
+      "mod_1": "foyege-tests/foyege_20261109_R1_full",
+      "strength_1": 1.0,
+      "copies_1": 1,
+      "show_info": true
+    }
+  },
+  "5": {
+    "class_type": "MiniMaxH3RefModTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "mods": [
+        "4",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "prompt": "A locked close-up of the same pink-haired character from <Picture 1>. Preserve the face, hair and dark jacket. The character keeps looking forward with a quiet closed mouth, breathing gently. Fixed camera. No speech, no captions.",
+      "reference_fps": 24.0,
+      "max_total_tokens": 4096
+    }
+  },
+  "6": {
+    "class_type": "EmptyMiniMaxH3LatentAV",
+    "inputs": {
+      "width": 512,
+      "height": 512,
+      "length": 22
+    }
+  },
+  "7": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "conditioning": [
+        "5",
+        0
+      ]
+    }
+  },
+  "8": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 6110905
+    }
+  },
+  "9": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "res_multistep"
+    }
+  },
+  "10": {
+    "class_type": "BasicScheduler",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "scheduler": "simple",
+      "steps": 20,
+      "denoise": 1.0
+    }
+  },
+  "11": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "8",
+        0
+      ],
+      "guider": [
+        "7",
+        0
+      ],
+      "sampler": [
+        "9",
+        0
+      ],
+      "sigmas": [
+        "10",
+        0
+      ],
+      "latent_image": [
+        "6",
+        0
+      ]
+    }
+  },
+  "12": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "11",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "SaveWEBM",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "refmod/G1_full/native",
+      "codec": "vp9",
+      "fps": 24.0,
+      "crf": 16.0
+    }
+  },
+  "14": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "12",
+        0
+      ],
+      "filename_prefix": "refmod/G1_full/frames/frame"
+    }
+  },
+  "15": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "5",
+        1
+      ]
+    }
+  }
+}

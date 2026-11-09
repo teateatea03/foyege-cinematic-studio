@@ -1,0 +1,96 @@
+{
+  "1": {
+    "class_type": "SAM3DBody_Loader",
+    "inputs": {
+      "model_file": "sam_3d_body_dinov3_bf16.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "LoadVideo",
+    "inputs": {
+      "file": "face_driver.mp4"
+    }
+  },
+  "3": {
+    "class_type": "GetVideoComponents",
+    "inputs": {
+      "video": [
+        "2",
+        0
+      ]
+    }
+  },
+  "4": {
+    "class_type": "SAM3DBody_Predict",
+    "inputs": {
+      "sam3d_body_model": [
+        "1",
+        0
+      ],
+      "image": [
+        "3",
+        0
+      ],
+      "run_hand_refinement": false,
+      "fov": 0.0,
+      "batch_size": 4
+    }
+  },
+  "5": {
+    "class_type": "SAM3DBody_FaceExpression",
+    "inputs": {
+      "sam3d_body_model": [
+        "1",
+        0
+      ],
+      "mhr_pose_data": [
+        "4",
+        0
+      ],
+      "image": [
+        "3",
+        0
+      ],
+      "strength": 1.0,
+      "mouth_strength": 1.0,
+      "eye_strength": 1.0,
+      "brow_strength": 1.0,
+      "input_threshold": 0.02,
+      "blendshape_smooth_window": 1
+    }
+  },
+  "6": {
+    "class_type": "BuildPoseFile",
+    "inputs": {
+      "pose_data": [
+        "5",
+        0
+      ],
+      "format": "glb",
+      "format.mesh_style": "body_mesh",
+      "format.mesh_style.bone_vis": "off",
+      "format.mesh_style.shader": "default",
+      "format.bone_smooth_window": 0,
+      "sam3d_body_model": [
+        "1",
+        0
+      ],
+      "fps": 24.0,
+      "camera_translation": "off",
+      "track_index": 0
+    }
+  },
+  "7": {
+    "class_type": "Save3DAdvanced",
+    "inputs": {
+      "model_3d": [
+        "6",
+        0
+      ],
+      "filename_prefix": "sam3d/S2_face_73",
+      "viewport_state": "",
+      "width": 512,
+      "height": 512
+    }
+  }
+}

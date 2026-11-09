@@ -1,0 +1,235 @@
+{
+  "date": "2026-11-09",
+  "publication": "Public summary of maintainer-local evidence; media, weights, host paths, UUIDs, process IDs and private histories omitted",
+  "runtime": {
+    "comfyui": "0.44.2",
+    "python": "3.13.11",
+    "torch": "2.12.0+cu130",
+    "gpu": "RTX 5080 only",
+    "blender": "5.2.3 LTS",
+    "render_backend": "OPTIX"
+  },
+  "refmod": {
+    "repository": "https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod",
+    "commit": "517e8c419a8584fbf69fceb487bc39d83e6a6ec8",
+    "version": "0.2.6",
+    "pip_packages_changed": false,
+    "upstream_loader_tests": 13,
+    "loader_test_returncode": 0,
+    "independent_saved_file_load": [
+      {
+        "file": "foyege_20261109_R1_full.safetensors",
+        "sha256": "8db167d8353c03038f53c27f4bf986c2afcbea7432eb4bd8f9e24ed4b26d8ba8",
+        "tokens": 256,
+        "shape": [
+          1,
+          24,
+          1,
+          32,
+          32
+        ],
+        "latent_sha256": "f40b4b514550002d62000ce3d41f1cd09b3c38ce496f8a4dcd6aa82fec0787b0"
+      },
+      {
+        "file": "foyege_20261109_R2_pooled.safetensors",
+        "sha256": "3d461417024c47c73a40cda86361fc97c58ec8e30a9be210f2fd44031567bc3e",
+        "tokens": 64,
+        "shape": [
+          1,
+          24,
+          1,
+          16,
+          16
+        ],
+        "latent_sha256": "c0067fe2a5ab67fa0791bad1831b399c55f0285e7493d6347d544309342edf01"
+      }
+    ]
+  },
+  "models": [
+    {
+      "repo": "Comfy-Org/MoGe",
+      "revision": "1484985258ba7ef45c314144fcf0e90924ffbf44",
+      "path": "geometry_estimation/moge_2_vitl_normal_fp16.safetensors",
+      "expected_sha256": "cb1a692d03235671e959e81360d7b4d9f44aefadb1f852d6ca6aa17799d5e31f",
+      "expected_size": 661859924,
+      "url": "https://huggingface.co/Comfy-Org/MoGe/resolve/1484985258ba7ef45c314144fcf0e90924ffbf44/geometry_estimation/moge_2_vitl_normal_fp16.safetensors",
+      "status": "downloaded_verified",
+      "actual_sha256": "cb1a692d03235671e959e81360d7b4d9f44aefadb1f852d6ca6aa17799d5e31f",
+      "actual_size": 661859924
+    },
+    {
+      "repo": "Comfy-Org/SDPose",
+      "revision": "acb43fbe8142b54d9ebd52b720b81dd4e14c8d81",
+      "path": "diffusion_models/rt_detr_v4-x-hgnet_fp32.safetensors",
+      "expected_sha256": "1ba4a7794c2f8b176327c887ba38fbe0f977049cbef149960288aa923d0239f3",
+      "expected_size": 247790660,
+      "url": "https://huggingface.co/Comfy-Org/SDPose/resolve/acb43fbe8142b54d9ebd52b720b81dd4e14c8d81/diffusion_models/rt_detr_v4-x-hgnet_fp32.safetensors",
+      "status": "downloaded_verified",
+      "actual_sha256": "1ba4a7794c2f8b176327c887ba38fbe0f977049cbef149960288aa923d0239f3",
+      "actual_size": 247790660
+    },
+    {
+      "repo": "Comfy-Org/sam-3d-body",
+      "revision": "7c974aea58e062252a6cb5b6f9b7f639d545b729",
+      "path": "detection/sam_3d_body_dinov3_bf16.safetensors",
+      "expected_sha256": "59fa45200c504c5b56625004d7d3385daf48c616613e88099e43bf83b3e249cf",
+      "expected_size": 2830737652,
+      "url": "https://huggingface.co/Comfy-Org/sam-3d-body/resolve/7c974aea58e062252a6cb5b6f9b7f639d545b729/detection/sam_3d_body_dinov3_bf16.safetensors",
+      "status": "downloaded_verified",
+      "actual_sha256": "59fa45200c504c5b56625004d7d3385daf48c616613e88099e43bf83b3e249cf",
+      "actual_size": 2830737652
+    },
+    {
+      "repo": "Comfy-Org/sam3.1",
+      "revision": "7bb8374780a725b4353ed31f3a9395c9742b5621",
+      "path": "checkpoints/sam3.1_multiplex_fp16.safetensors",
+      "expected_sha256": "9ba99c92703c2e8b4f47de2d34a539bb8e18923049e238b780d70dbe6368eb03",
+      "expected_size": 1745546848,
+      "url": "https://huggingface.co/Comfy-Org/sam3.1/resolve/7bb8374780a725b4353ed31f3a9395c9742b5621/checkpoints/sam3.1_multiplex_fp16.safetensors",
+      "status": "downloaded_verified",
+      "actual_sha256": "9ba99c92703c2e8b4f47de2d34a539bb8e18923049e238b780d70dbe6368eb03",
+      "actual_size": 1745546848
+    }
+  ],
+  "runs": {
+    "S1_fullbody": {
+      "workflow": "workflows/S1_fullbody.json",
+      "workflow_file_sha256": "faed6a8b39cfb518fcd5e6fc394b97156b42d8f2c1d3b074c62d3d88943b3549",
+      "success": true,
+      "runtime_seconds": 33.282,
+      "executed_local_file_sha256": "25bec80ecfd3d4a12432095fe678e9ca9696d3e7d154422f01c5502c4c4cbc4e"
+    },
+    "S2_face": {
+      "workflow": "workflows/S2_face.json",
+      "workflow_file_sha256": "983c60e5d03a65f1d390871e1cde64af148a1073914eea3d875442ef09de01d8",
+      "success": true,
+      "runtime_seconds": 13.698,
+      "executed_local_file_sha256": "70b211ec1864ecd6c800fe9ab1efe93715e085ba0524233e41b1f75037ec9351"
+    },
+    "R1_full": {
+      "workflow": "workflows/R1_full.json",
+      "workflow_file_sha256": "5ac0f5729d0377faae6ff17d250570b289f4016eefc2cf7b430b184b6619e351",
+      "success": true,
+      "runtime_seconds": 21.889,
+      "executed_local_file_sha256": "56f9aa64b1d8e984c3a05f95b4106ebcc6eb270d7b206ccf615e22792830d5b5"
+    },
+    "R2_pooled": {
+      "workflow": "workflows/R2_pooled.json",
+      "workflow_file_sha256": "e08b1aefa3ca74da99572adb2f5f48603bbd2c4621eb082a2cc5c69f27fb2450",
+      "success": true,
+      "runtime_seconds": 1.39,
+      "executed_local_file_sha256": "db59cdbd9cce29ac4b6401b0860b071e7fef042a97725bfd7b0823702cc99e9b"
+    },
+    "G1_full": {
+      "workflow": "workflows/G1_full.json",
+      "workflow_file_sha256": "a5d95bd55b35c3775c7045d5d19505292de75fc298e1fc463de6ab78ee9381fe",
+      "success": true,
+      "runtime_seconds": 178.041,
+      "executed_local_file_sha256": "4cf07bf38520e22d65ec6e8fa13095ac70663b0d0654767d43fe23773dd79464"
+    },
+    "G2_pooled": {
+      "workflow": "workflows/G2_pooled.json",
+      "workflow_file_sha256": "174e872fdcd4e5e1c4790ffba5fff45f82e687075de30c1aa81cbf9d39bb24d2",
+      "success": true,
+      "runtime_seconds": 53.811,
+      "executed_local_file_sha256": "0388f78f4f0d4de3545e5d7d9d1a49eae5bb6494195d1b6249a00eabb9b2f0ff"
+    }
+  },
+  "blender_imports": [
+    {
+      "source_file": "S1_fullbody_00001.glb",
+      "source_sha256": "ac546bd29c82b0d53852c7bf3831d1a8b93c92d376ca6bfa43e5301b39f52e57",
+      "blender": "5.2.3 LTS",
+      "armatures": [
+        {
+          "name": "track00",
+          "bones": 127
+        }
+      ],
+      "mesh_morph_counts": [
+        72
+      ]
+    },
+    {
+      "source_file": "S2_face_73_00001.glb",
+      "source_sha256": "8759c617d51d3e6d229538f3c2223705858e99f4968c49ae3a5a1e08391b5a07",
+      "blender": "5.2.3 LTS",
+      "armatures": [
+        {
+          "name": "track00",
+          "bones": 127
+        }
+      ],
+      "mesh_morph_counts": [
+        72
+      ]
+    }
+  ],
+  "blender_expression_snapshots": [
+    {
+      "label": "neutral",
+      "source_frame": 0,
+      "sha256": "886f655df42f42b6f68e973029368397d14bd4b923c889c0ba6d2974b63c0f56",
+      "selected_shapes": {
+        "target_14": 0.08070776611566544,
+        "target_15": 0.03039376623928547,
+        "target_24": 0.014978432096540928,
+        "target_32": 0.0,
+        "target_33": 0.0
+      }
+    },
+    {
+      "label": "smile",
+      "source_frame": 26,
+      "sha256": "0539725681805c08784fc7e846646664379872f7a26d785ad8ae2db3cd43975f",
+      "selected_shapes": {
+        "target_14": 0.004616688936948776,
+        "target_15": 0.0,
+        "target_24": 0.16434317827224731,
+        "target_32": 0.9086177349090576,
+        "target_33": 0.8747127056121826
+      }
+    },
+    {
+      "label": "blink",
+      "source_frame": 63,
+      "sha256": "bd79214becd6f7d1361647a19439b053fc58abdd00c639df8c1520c0d5c3fe52",
+      "selected_shapes": {
+        "target_14": 0.6044237017631531,
+        "target_15": 0.6412146091461182,
+        "target_24": 0.10743600875139236,
+        "target_32": 0.510358989238739,
+        "target_33": 0.5058016180992126
+      }
+    }
+  ],
+  "quality": {
+    "SAM3D": "GLB imports into Blender 5.2.3; 127 bones and 72 morph targets; 29 morph channels varied in 73-frame expression clip; three RTX5080 OptiX snapshots visually checked",
+    "RefMod_full": "all22 generated frames reviewed; recognizable demo appearance retained; slightly parted lips despite closed-mouth prompt",
+    "RefMod_pooled16": "all22 generated frames reviewed; face/eye distortion and blur; rejected as identity baseline"
+  },
+  "limits": [
+    "No Hitomi retargeting or identity validation",
+    "Hidden body anatomy not validated from head/shoulder driver",
+    "H3 sample only22frames/0.917seconds, below documented native training duration; no long motion or precise microexpression guarantee",
+    "No continuous Blender animation review or normal-speed human acceptance",
+    "SAM3.1 tracker weights installed and hash verified; tracker inference not tested",
+    "Independent disk load and server generation verified separately; no cold-process generation claim"
+  ],
+  "preservation": {
+    "protected_file_hashes_unchanged": true,
+    "core_or_other_node_updates": false,
+    "mining_started": false
+  },
+  "media": {
+    "generated_frames_reviewed": 44,
+    "each_clip_frames": 22,
+    "fps": 24,
+    "width": 512,
+    "height": 512,
+    "duration_seconds": 0.9166666666666666,
+    "audio": false,
+    "normal_speed_human_acceptance": false
+  },
+  "workflow_encoding": "Published Git blobs use UTF-8 LF; executed local files may use CRLF; parsed JSON equality checked for all six."
+}

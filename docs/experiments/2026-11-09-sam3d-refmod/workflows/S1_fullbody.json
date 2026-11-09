@@ -1,0 +1,130 @@
+{
+  "1": {
+    "class_type": "SAM3DBody_Loader",
+    "inputs": {
+      "model_file": "sam_3d_body_dinov3_bf16.safetensors"
+    }
+  },
+  "2": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "fullbody.png"
+    }
+  },
+  "3": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "rt_detr_v4-x-hgnet_fp32.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "RTDETR_detect",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "image": [
+        "2",
+        0
+      ],
+      "threshold": 0.5,
+      "class_name": "person",
+      "max_detections": 1
+    }
+  },
+  "5": {
+    "class_type": "LoadMoGeModel",
+    "inputs": {
+      "model_name": "moge_2_vitl_normal_fp16.safetensors"
+    }
+  },
+  "6": {
+    "class_type": "MoGeInference",
+    "inputs": {
+      "resolution_level": 5,
+      "fov_x_degrees": 0.0,
+      "batch_size": 1,
+      "force_projection": true,
+      "apply_mask": true,
+      "refine_steps": 3,
+      "moge_model": [
+        "5",
+        0
+      ],
+      "image": [
+        "2",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "MoGeGeometryToFOV",
+    "inputs": {
+      "moge_geometry": [
+        "6",
+        0
+      ],
+      "axis": "vertical",
+      "unit": "degrees"
+    }
+  },
+  "8": {
+    "class_type": "SAM3DBody_Predict",
+    "inputs": {
+      "sam3d_body_model": [
+        "1",
+        0
+      ],
+      "image": [
+        "2",
+        0
+      ],
+      "bboxes": [
+        "4",
+        0
+      ],
+      "run_hand_refinement": false,
+      "fov": [
+        "7",
+        0
+      ],
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "BuildPoseFile",
+    "inputs": {
+      "pose_data": [
+        "8",
+        0
+      ],
+      "format": "glb",
+      "format.mesh_style": "body_mesh",
+      "format.mesh_style.bone_vis": "off",
+      "format.mesh_style.shader": "default",
+      "format.bone_smooth_window": 0,
+      "sam3d_body_model": [
+        "1",
+        0
+      ],
+      "fps": 24.0,
+      "camera_translation": "off",
+      "track_index": 0
+    }
+  },
+  "10": {
+    "class_type": "Save3DAdvanced",
+    "inputs": {
+      "model_3d": [
+        "9",
+        0
+      ],
+      "filename_prefix": "sam3d/S1_fullbody",
+      "viewport_state": "",
+      "width": 512,
+      "height": 512
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "refmod_reference.png"
+    }
+  },
+  "2": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "3": {
+    "class_type": "MiniMaxH3RefModExtract",
+    "inputs": {
+      "background_retention": 0.0,
+      "name": "foyege_20261109_R2_pooled",
+      "mode": "Compressed Reference",
+      "concept_type": "identity",
+      "vae": [
+        "2",
+        0
+      ],
+      "refs_image.ref_image_1": [
+        "1",
+        0
+      ],
+      "ref_resolution": 512,
+      "pool_h": 16,
+      "pool_w": 16,
+      "latent_frames": 1,
+      "identity": 0,
+      "merge": false,
+      "motion_only": false,
+      "multiplier": 1,
+      "max_tokens": 4096,
+      "description": "Local pink-haired demo portrait; technical stored-reference test, not Hitomi",
+      "save": true,
+      "subfolder": "foyege-tests",
+      "budget_policy": "error"
+    }
+  },
+  "4": {
+    "class_type": "MiniMaxH3RefModInspect",
+    "inputs": {
+      "mods": [
+        "3",
+        0
+      ],
+      "index": 0,
+      "preview": "stored",
+      "strength": 1.0,
+      "vae": [
+        "2",
+        0
+      ],
+      "visual_preview": "first_frame"
+    }
+  },
+  "5": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "4",
+        1
+      ],
+      "filename_prefix": "refmod/R2_pooled/reconstruction"
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "4",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "4",
+        3
+      ]
+    }
+  }
+}

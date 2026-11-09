@@ -50,6 +50,8 @@ py "$env:USERPROFILE\.codex\skills\.system\skill-installer\scripts\install-skill
 
 ## 證據與限制
 
+2026-11-09 補齊 SAM3D／RefMod，已完成 5080 推論、GLB／Blender 表情快照及 RefMod 儲存／讀檔／生成。完整參考可作基準，pooled16 出現臉眼失真；瞳角色轉接、長鏡與精準微表情仍待驗收。[結果、版本與六份 API 工作流](docs/experiments/2026-11-09-sam3d-refmod/README.md)
+
 2026-11-03 的單機紀錄包含六個 Wan take、341 個原生影格。開眼淺笑、淺笑轉移與固定機位的保持表情續接有觀察紀錄。精確的眼先頭後、真人驅動、正式角色身份與歌曲同步仍待各案驗證。[條件與限制](skills/foyege-cinematic-direction/references/local-tests.md)
 
 公開包提供文字、腳本與測試摘要。作者影片、角色圖片、模型權重及本機完整實驗媒體由原始來源或各自資產管理。歷史紀錄的結論屬指定條件，公開讀者需自行重現。
