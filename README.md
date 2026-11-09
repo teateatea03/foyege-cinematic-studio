@@ -73,6 +73,8 @@ Claude 使用相同目錄格式，將 destination 改為其技能根目錄，例
 
 [T8star ComfyUI 劇組工具盤點](docs/RESEARCH_2026-11-09-t8-channel.md)：篩選 150 筆頻道標題、12 支詳細說明及 10 個固定來源版本，整理空間標記、擬音、字幕、長鏡、3D 與未來工具；先重用本機資源，候選未部署。
 
+[三項優先工具已落地](docs/experiments/2026-11-09-priority-crew/README.md)：5080 字幕 CUDA CLI、空間標記短測與 MMAudio 擬音，附原創 API／UI 圖、示意素材及回歸測試；標記仍殘框、擬音待聽審，主 ComfyUI 環境保留。
+
 ## 證據與限制
 
 2026-11-09 補齊 SAM3D／RefMod，已完成 5080 推論、GLB／Blender 表情快照及 RefMod 儲存／讀檔／生成。完整參考可作基準，pooled16 出現臉眼失真；瞳角色轉接、長鏡與精準微表情仍待驗收。[結果、版本與六份 API 工作流](docs/experiments/2026-11-09-sam3d-refmod/README.md)

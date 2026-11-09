@@ -11,7 +11,7 @@ from install_suite import load_suite
 
 ROOT = Path(__file__).resolve().parents[1]
 ERRORS = []
-COUNTS = {"skills": 0, "links": 0, "json": 0, "python": 0, "text": 0}
+COUNTS = {"skills": 0, "links": 0, "json": 0, "python": 0, "text": 0, "png": 0}
 
 
 def problem(path, message):
@@ -37,6 +37,13 @@ def main():
         if not path.is_file() or any(p in {".git", ".venv", "__pycache__"} for p in path.relative_to(ROOT).parts):
             continue
         try:
+            if path.suffix.lower() == ".png":
+                # Binary diagram fixtures: header check only, not visual validation.
+                with path.open("rb") as stream:
+                    if stream.read(8) != b"\x89PNG\r\n\x1a\n":
+                        problem(path, "invalid PNG signature")
+                COUNTS["png"] += 1
+                continue
             text = path.read_text(encoding="utf-8-sig")
         except (UnicodeError, OSError) as exc:
             problem(path, f"cannot read UTF-8 text: {exc}")

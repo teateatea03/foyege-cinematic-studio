@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-09",
+  "gpu": "RTX 5080 16GB",
+  "index_translate": {
+    "input_sha256": "25ad3bc3bb3b350711cdefe7626a8da2104e8aae3e6087e9f59999745391d9aa",
+    "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+    "device": "NVIDIA GeForce RTX 5080",
+    "precision": "bf16",
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.1",
+    "safetensors": "0.8.0",
+    "acceleration": {
+      "enabled": false,
+      "reason": "No module named 'triton'",
+      "cpu_reference": true
+    },
+    "metadata": {
+      "cues": 8,
+      "bilingual": false,
+      "timing_preserved": true
+    },
+    "results": [
+      {
+        "text": "Hitomi, first look at the door, then turn back.",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 53,
+        "output_tokens": 14,
+        "seconds": 18.715,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491629056,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "I heard that, but I don't want to answer right now.",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 40,
+        "output_tokens": 15,
+        "seconds": 1.68,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491116032,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "Don't laugh yet, let him finish.",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 39,
+        "output_tokens": 10,
+        "seconds": 0.863,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491077120,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "Place the cup on the table, don't touch the microphone.",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 40,
+        "output_tokens": 14,
+        "seconds": 2.578,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491116032,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "%%IT_srt_0f8afc37c828_0%%This is just a test.%%IT_srt_0f8afc37c828_1%%",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 36,
+        "output_tokens": 7,
+        "seconds": 0.663,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4490959360,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "Master, is today's training over?",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 52,
+        "output_tokens": 9,
+        "seconds": 0.662,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491589120,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "Not yet.\nLet's double-check the shot continuity.",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 56,
+        "output_tokens": 13,
+        "seconds": 0.977,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491745792,
+        "prompt_version": "index-official-v1"
+      },
+      {
+        "text": "Keep the pauses. Don't add any dialogue for me.",
+        "status": "completed",
+        "finish_reason": "stop",
+        "input_tokens": 42,
+        "output_tokens": 13,
+        "seconds": 1.101,
+        "model_id": "IndexTeam/Index-Translate-2B",
+        "model_revision": "47682cf7adbb20e7834c2e43960b1b85c369713a",
+        "device": "cuda",
+        "precision": "bf16",
+        "peak_cuda_bytes": 4491195392,
+        "prompt_version": "index-official-v1"
+      }
+    ],
+    "seconds": 61.714,
+    "output_sha256": "198bf06f5430fe9f5ea861a9fdab0e11d9dad7e68175d6998f8b68ee66c91ae9",
+    "review_status": "requires_semantic_and_readability_review"
+  },
+  "visual_marker": {
+    "frames": 90,
+    "fps": 24,
+    "dimensions": [
+      512,
+      288
+    ],
+    "seed": 611091101,
+    "steps": 4,
+    "execution_seconds": 261.062,
+    "native_binding_verified": true,
+    "review": "six sampled times show single actor arriving at target; colored rectangles remain; not clean final footage",
+    "full_continuity_review": false
+  },
+  "foley": {
+    "calibration": {
+      "device": "NVIDIA GeForce RTX 5080",
+      "source_frames": 120,
+      "source_duration": 5,
+      "before": {
+        "duration": 4.8,
+        "clip_frames": 38,
+        "sync_frames": 120,
+        "clip_last_value": 0.30980393290519714
+      },
+      "after": {
+        "duration": 5.0,
+        "clip_frames": 40,
+        "sync_frames": 125,
+        "clip_last_value": 0.9803921580314636,
+        "sync_last_normalized": 0.9921568632125854
+      },
+      "scope": "monotonic frame-ramp temporal coverage; does not prove perceptual audio sync"
+    },
+    "audio": {
+      "frames": 221184,
+      "sample_rate": 44100,
+      "channels": 1,
+      "duration": 5.015510204081632,
+      "peak": 0.70703125,
+      "rms": 0.030194370705306707,
+      "pcm_frame_alignment": true,
+      "flac_sha256": "36a7be143b568ccde3432531c816ab22fdf8b10c80fc313a3be0d286bcb8dab6",
+      "review": "not listened; naturalness, unwanted speech and action sync not accepted"
+    }
+  },
+  "foley_review_media": {
+    "raw_audio_samples": 221184,
+    "review_samples": 220500,
+    "trimmed_tail_samples": 684,
+    "review_duration": 5,
+    "pcm_frame_alignment": true,
+    "video_packet_bytes_preserved": true,
+    "audio_codec": "AAC",
+    "listening_review": "pending",
+    "footage_attribution": "Jane pouring beer by Angulidayaaluta, Wikimedia Commons, CC BY-SA 4.0; source 23-28s, resized and made silent, generated Foley added. Local review video retains CC BY-SA 4.0."
+  },
+  "browser": {
+    "marker_nodes": 19,
+    "marker_missing": 0,
+    "marker_error_nodes": 0,
+    "foley_nodes": 6,
+    "foley_missing": 0,
+    "foley_error_nodes": 0,
+    "limits": "fresh isolated profile had optional CSS/template-list 404s and offline release-check CSP errors; not an error-free console claim"
+  },
+  "no_default_comfy_package_changes": true,
+  "third_party_runtime_bundled": false
+}

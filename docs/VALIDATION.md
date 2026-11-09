@@ -1,5 +1,11 @@
 # 驗證範圍
 
+## 2026-11-09 優先工具隔離部署
+
+[條件與結果](experiments/2026-11-09-priority-crew/README.md)：可攜字幕 CLI 在 5080 完整跑 8 cue；標記生成 90 幀；MMAudio 生成一次並做 CUDA 時間取樣校準、PCM frame alignment 及保留視訊 packet 的聽審合片。字幕初版格式失配／加戲、標記殘框與未聽審的限制均保留。API 圖及真實瀏覽器的 19／6 節點載入通過，沒有 missing／error node；沒有宣稱整個 console 無錯誤。
+
+套件檢查通過：9 技能、376 內部連結、24 JSON、19 Python、127 文字檔及 1 PNG header，零錯誤；五項安裝測試及四項字幕介面回歸通過。原驗證器把 PNG 當 UTF-8，已加入僅限 PNG 的 signature 分流；header 通過不是視覺品質驗證。Codex／Claude quick_validate 通過，新增技能檔與公開版 byte hash 相同。Gitleaks 未發現秘密，主 Python 套件版本及原 MMAudio 節點位元組保持不變；測試服務關閉並保留操作入口。
+
 ## 2026-11-09 T8star 頻道與劇組工具盤點
 
 [調查範圍與候選](RESEARCH_2026-11-09-t8-channel.md) 記錄前 150 筆標題篩選、12 支 metadata／說明來源及 10 個固定 repo revision。公開套件驗證通過：9 技能、360 內部連結、17 JSON、17 Python、114 文字檔，零錯誤；五項安裝測試通過。公開／Codex／Claude 的 Foyege 與 film-production 六個入口 quick_validate 通過；扣除新增的一行入口後，其餘位元組與備份一致，三份新參考 SHA256 相同。Gitleaks 未發現秘密，git diff --check 無空白錯誤。

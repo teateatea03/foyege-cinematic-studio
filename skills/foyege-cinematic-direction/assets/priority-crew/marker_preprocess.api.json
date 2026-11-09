@@ -1,0 +1,62 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "marker_fixture.png"
+    }
+  },
+  "2": {
+    "class_type": "MiniMaxH3VisualMarkerPrepareEXPT8",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "mode": "render_rectangles",
+      "markers_json": "{\"markers\": [{\"marker_id\": \"actor_A\", \"kind\": \"actor\", \"role_id\": \"A\", \"color\": \"cyan\", \"description\": \"the red-shirted schematic person\", \"xyxy\": [0.14, 0.12, 0.31, 0.78]}, {\"marker_id\": \"target_A\", \"kind\": \"target\", \"color\": \"yellow\", \"description\": \"the floor directly in front of the closed door on the right\", \"xyxy\": [0.76, 0.75, 0.95, 0.94]}], \"relations\": [{\"actor_marker_id\": \"actor_A\", \"target_marker_id\": \"target_A\", \"action\": \"walk to the target area and stop with both feet there\"}]}",
+      "line_width": 3,
+      "expected_source_sha256": "b44bcc41a49173dcd4fdf0f939a9c5f53374788c698c7a34b9fad8c6715f5497"
+    }
+  },
+  "3": {
+    "class_type": "MiniMaxH3VisualMarkerPromptEXPT8",
+    "inputs": {
+      "marker_plan": [
+        "2",
+        1
+      ],
+      "base_prompt": "A single fixed wide shot. The person pauses before walking. No speech.",
+      "mode": "generated",
+      "picture_ordinal": 1,
+      "include_reminder": true
+    }
+  },
+  "4": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "2",
+        0
+      ],
+      "filename_prefix": "marker/marked"
+    }
+  },
+  "5": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "3",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "2",
+        2
+      ]
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "1": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "marker_fixture.png"
+    }
+  },
+  "2": {
+    "class_type": "MiniMaxH3VisualMarkerPrepareEXPT8",
+    "inputs": {
+      "image": [
+        "1",
+        0
+      ],
+      "mode": "render_rectangles",
+      "markers_json": "{\"markers\": [{\"marker_id\": \"actor_A\", \"kind\": \"actor\", \"role_id\": \"A\", \"color\": \"cyan\", \"description\": \"the red-shirted schematic person\", \"xyxy\": [0.14, 0.12, 0.31, 0.78]}, {\"marker_id\": \"target_A\", \"kind\": \"target\", \"color\": \"yellow\", \"description\": \"the floor directly in front of the closed door on the right\", \"xyxy\": [0.76, 0.75, 0.95, 0.94]}], \"relations\": [{\"actor_marker_id\": \"actor_A\", \"target_marker_id\": \"target_A\", \"action\": \"walk to the target area and stop with both feet there\"}]}",
+      "line_width": 3,
+      "expected_source_sha256": "b44bcc41a49173dcd4fdf0f939a9c5f53374788c698c7a34b9fad8c6715f5497"
+    }
+  },
+  "3": {
+    "class_type": "MiniMaxH3VisualMarkerPromptEXPT8",
+    "inputs": {
+      "marker_plan": [
+        "2",
+        1
+      ],
+      "base_prompt": "A fixed wide shot of the same simple flat schematic person and room from <Picture 1>. The red-shirted person walks from the left toward the floor in front of the closed door on the right and stops there. Keep the same flat diagram style, single person, closed door and fixed camera. No speech, no subtitles.",
+      "mode": "generated",
+      "picture_ordinal": 1,
+      "include_reminder": true
+    }
+  },
+  "10": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "11": {
+    "class_type": "MiniMaxH3LoRACompatibilityLoaderT8Advanced",
+    "inputs": {
+      "model": [
+        "10",
+        0
+      ],
+      "lora_name": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "12": {
+    "class_type": "MiniMaxH3LowVRAMAttentionT8Advanced",
+    "inputs": {
+      "model": [
+        "11",
+        0
+      ],
+      "head_chunks": 4
+    }
+  },
+  "13": {
+    "class_type": "MiniMaxH3ChunkFeedForwardT8Advanced",
+    "inputs": {
+      "model": [
+        "12",
+        0
+      ],
+      "chunks": 2,
+      "seq_threshold": 4096
+    }
+  },
+  "14": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    }
+  },
+  "15": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    }
+  },
+  "16": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    }
+  },
+  "17": {
+    "class_type": "MiniMaxH3VisualMarkerConditioningEXPT8",
+    "inputs": {
+      "marker_position": 1,
+      "reference_policy": "marked_vae_and_qwen",
+      "audio_denoise_strength": 0.35,
+      "add_source_as_reference": true,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "prompt_recipe": [
+        "3",
+        3
+      ],
+      "clip": [
+        "14",
+        0
+      ],
+      "video_vae": [
+        "15",
+        0
+      ],
+      "audio_vae": [
+        "16",
+        0
+      ],
+      "width": 512,
+      "height": 288,
+      "length": 90,
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "prompt_primary_audio_ordinal": 0
+    }
+  },
+  "18": {
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "inputs": {
+      "model": [
+        "13",
+        0
+      ],
+      "av_latent": [
+        "17",
+        1
+      ],
+      "steps": 4,
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "19": {
+    "class_type": "BasicGuider",
+    "inputs": {
+      "model": [
+        "18",
+        0
+      ],
+      "conditioning": [
+        "17",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 611091101
+    }
+  },
+  "21": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "20",
+        0
+      ],
+      "guider": [
+        "19",
+        0
+      ],
+      "sampler": [
+        "18",
+        1
+      ],
+      "sigmas": [
+        "18",
+        2
+      ],
+      "latent_image": [
+        "17",
+        1
+      ]
+    }
+  },
+  "22": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "21",
+        0
+      ],
+      "vae": [
+        "15",
+        0
+      ]
+    }
+  },
+  "23": {
+    "class_type": "SaveWEBM",
+    "inputs": {
+      "images": [
+        "22",
+        0
+      ],
+      "filename_prefix": "marker/G1/native",
+      "codec": "vp9",
+      "fps": 24.0,
+      "crf": 16.0
+    }
+  },
+  "24": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "22",
+        0
+      ],
+      "filename_prefix": "marker/G1/frames/frame"
+    }
+  },
+  "25": {
+    "class_type": "PreviewAny",
+    "inputs": {
+      "source": [
+        "17",
+        7
+      ]
+    }
+  }
+}
