@@ -1,0 +1,157 @@
+{
+  "review_date": "2026-11-09",
+  "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+  "channel_url": "https://www.youtube.com/@T8star-Aix/",
+  "catalog_scope": "first 150 videos listing entries; titles screened; no full video viewing this survey",
+  "detailed_metadata": [
+    {
+      "id": "2xV7ef6w5Mk",
+      "url": "https://www.youtube.com/watch?v=2xV7ef6w5Mk",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261026",
+      "duration_seconds": 657,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "0XVpCRPW2zk",
+      "url": "https://www.youtube.com/watch?v=0XVpCRPW2zk",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261019",
+      "duration_seconds": 683,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "ENX5Ximey-0",
+      "url": "https://www.youtube.com/watch?v=ENX5Ximey-0",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261012",
+      "duration_seconds": 831,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "eIlTfP0UOng",
+      "url": "https://www.youtube.com/watch?v=eIlTfP0UOng",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260917",
+      "duration_seconds": 983,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "tw_VOt1bkAw",
+      "url": "https://www.youtube.com/watch?v=tw_VOt1bkAw",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260912",
+      "duration_seconds": 1171,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "yh4MZDLISBU",
+      "url": "https://www.youtube.com/watch?v=yh4MZDLISBU",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261016",
+      "duration_seconds": 720,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "3ZNUn5UZ4Oc",
+      "url": "https://www.youtube.com/watch?v=3ZNUn5UZ4Oc",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261017",
+      "duration_seconds": 904,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "VrQ0Rm9GpOg",
+      "url": "https://www.youtube.com/watch?v=VrQ0Rm9GpOg",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261005",
+      "duration_seconds": 788,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "7DT4NQN3Gzw",
+      "url": "https://www.youtube.com/watch?v=7DT4NQN3Gzw",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260915",
+      "duration_seconds": 1070,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "2RuXMJqOC4Q",
+      "url": "https://www.youtube.com/watch?v=2RuXMJqOC4Q",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260919",
+      "duration_seconds": 638,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "qSQ3tWTDCZw",
+      "url": "https://www.youtube.com/watch?v=qSQ3tWTDCZw",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261012",
+      "duration_seconds": 759,
+      "evidence": "metadata and description links only"
+    },
+    {
+      "id": "7YeFQlDXUuo",
+      "url": "https://www.youtube.com/watch?v=7YeFQlDXUuo",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20261031",
+      "duration_seconds": 1062,
+      "evidence": "metadata and description links only"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "repo": "RK-BoilingPoint/H3-Visual-Marker-Control",
+      "sha": "0f0274f5f07c0e8dda0bb8cd0286256587f4e959",
+      "license": "MIT"
+    },
+    {
+      "repo": "T8mars/Comfyui-Hi3d-T8",
+      "sha": "8fae8e4e86a83f3af92a9b9bfcd6c8b78dfa75bc",
+      "license": "NOASSERTION"
+    },
+    {
+      "repo": "T8mars/Comfyui-Index-Translate-T8",
+      "sha": "5beac49cd0f8e125f0ca00cb5eba6bc2b7ed265a",
+      "license": "Apache-2.0"
+    },
+    {
+      "repo": "bilibili/Index-Translate",
+      "sha": "93ac63774d1c6939aec05e6f0f191bf90f225365",
+      "license": "Apache-2.0"
+    },
+    {
+      "repo": "T8mars/Comfyui-Flux3-PE-GGUF-T8",
+      "sha": "4a7fe1af236510eb3788849190b6fa25267d6d91",
+      "license": "Apache-2.0"
+    },
+    {
+      "repo": "T8mars/comfyui-minimax-h3-audio-T8",
+      "sha": "3a23f333537d9a715aad7ce79af8d9ec891d9ad8",
+      "license": "NOASSERTION"
+    },
+    {
+      "repo": "T8mars/MinimaxH3_Semantic_Bridge_Trainer-T8",
+      "sha": "3bc62bf5518fb59c784b5d446e343729d2a03d51",
+      "license": "NOASSERTION"
+    },
+    {
+      "repo": "T8mars/Code-Animate-T8",
+      "sha": "d4f0d1216d33781ce47f38de770d93626f85e7ce",
+      "license": null
+    },
+    {
+      "repo": "T8mars/Comfyui-Mulacover-T8",
+      "sha": "7e8b16912557f605547c38709c93e7c5915e32d5",
+      "license": null
+    },
+    {
+      "repo": "T8mars/video-replacement-skill-factory-T8",
+      "sha": "5e5a1d85abc661b15a65c0a3094e8bf88810abc5",
+      "license": null
+    }
+  ],
+  "execution": "no model installation, inference, service restart or GPU use"
+}

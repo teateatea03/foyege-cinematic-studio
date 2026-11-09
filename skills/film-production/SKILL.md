@@ -19,6 +19,7 @@ description: 規劃 AI MV、短片、短劇及多鏡頭製作，整合劇本、�
 - 要盤點劇組功能、排跨部門依賴或交接 VFX／調色／聲音時，若已安裝 foyege-cinematic-direction，讀其 [跨部門製作](../foyege-cinematic-direction/references/crew-workflow.md) 與當鏡所需的部門卡；沿用本技能的十二階段、責任與狀態，不重建第二份正本。未安裝時先用本技能現有拆解及鏡頭卡，列明專項缺口。
 - 寫分鏡、鏡頭表或生成工單：讀 [鏡頭卡](references/shot-card.md)。
 - 設計提示詞、接觸或微表演：讀 [Foyege 導演方法與模型編譯](references/directing-and-prompts.md)；可用時再調用 foyege-cinematic-direction 的相關細節。
+- 比較 ComfyUI 補強與未來劇組工具時，可用 Foyege 的 [工具選用與候選驗收](../foyege-cinematic-direction/references/crew-tool-routing.md)；先核對已有資源，將調查、部署及內容驗收分列。未安裝配套時沿用本技能測試卡並列工具缺口。
 - 測試、評片或失敗修正：讀 [測試與驗收](references/testing-and-review.md)。
 - 粗剪、聲音、後期或交付：讀 [剪接到交付](references/post-and-delivery.md)。
 - 對白短劇的資產、參考／聲音交接、生成段與鏡號對照、返工或成本：讀 [對白短劇](references/dialogue-production.md)。只寫劇本或無對白 MV 不需載入。

@@ -1,5 +1,11 @@
 # 驗證範圍
 
+## 2026-11-09 T8star 頻道與劇組工具盤點
+
+[調查範圍與候選](RESEARCH_2026-11-09-t8-channel.md) 記錄前 150 筆標題篩選、12 支 metadata／說明來源及 10 個固定 repo revision。公開套件驗證通過：9 技能、360 內部連結、17 JSON、17 Python、114 文字檔，零錯誤；五項安裝測試通過。公開／Codex／Claude 的 Foyege 與 film-production 六個入口 quick_validate 通過；扣除新增的一行入口後，其餘位元組與備份一致，三份新參考 SHA256 相同。Gitleaks 未發現秘密，git diff --check 無空白錯誤。
+
+本輪只核對本機節點目錄、MOSS 十檔存在／大小與 CharRef 補丁 hash；未載入完整模型、啟動 ComfyUI 或使用 GPU。候選卡的人工文字核對涵蓋：單鏡微表演繼續使用原表演卡；無定時字幕先列 ASR 缺口；GPU 忙碌維持準備模式。這不是獨立模型行為評測、影片連續觀看或候選推論品質證明。
+
 ## 2026-11-09 Drama3 配音製作補強
 
 [研究與限制](RESEARCH_2026-11-09-drama3-voice.md) 記錄 30 個不同時間的畫面、HTTP 429 字幕缺口與固定上游 revision。19 張上游 workflow／30 個節點宣告通過有限靜態核對；四項 stdlib 時長／詞時間計算通過。新增配音表演卡與雙技能交接，未做模型載入、ASR、音質、克隆相似度或完整 Studio 驗收。
