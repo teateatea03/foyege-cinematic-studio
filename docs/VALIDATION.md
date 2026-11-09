@@ -62,6 +62,14 @@
 
 本機修改前備份 18 檔，只改 production.md／tutorials.md，另新增 media-handoff.md；其餘 16 檔逐位元組不變。新頁公開與本機位元組一致，原有參考內容保留，周邊增補對齊；公開核心及編劇配套無 diff。這些結果不代表字幕播放器、剪輯器往返、非靜音響度準確度或最終成片已驗收。
 
+## 2026-11-09 專案維護研究
+
+新增四組第一方正文與按需 project-stewardship.md；既有檔案只在 media-handoff.md 加路由、tutorials.md 追加來源，核心不改。[六組原創文字走查](RESEARCH_2026-11-09-stewardship.md#原創文字走查) 涵蓋副本依賴、hash 變更、素材用途、工程鎖、改稿版本與範圍邊界。合成 JSON／文字／VTT 三檔在新目錄恢復匹配，另成功檢出修改候選及缺檔；只驗證單磁碟合成資料方法，未測真實媒體、編輯器或 NAS 恢復，也不是模型品質評分。
+
+套件檢查涵蓋 2 個技能、173 個內部連結、3 份 JSON、2 份 Python、38 份文字，零錯誤。公開與本機導演的 quick_validate.py 均通過，Git diff 空白檢查通過，Gitleaks 工作目錄掃描無命中。
+
+本機修改前備份 19 檔，只有 media-handoff.md／tutorials.md 兩份預期增補，其餘 17 檔逐位元組不變；新頁及路由對齊公開版，原有文字保留。公開核心、production.md、腳本、核心說明與編劇配套均無 diff。沒有新增工具、服務、排程、模型／GPU、挖礦或生產儲存操作。
+
 ## 媒體與運算限制
 
 歷史六個 take 的參數及觀察見 [短測紀錄](../skills/foyege-cinematic-direction/references/local-tests.md)。原生影格總數 341，示範是靜音技術片；精確眼頭延遲、真人驅動、正式角色身份與歌曲同步仍待測。

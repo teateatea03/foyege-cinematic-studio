@@ -179,3 +179,23 @@ W3C WAI〈Captions/Subtitles〉。閱讀定義、自動字幕不足、檔案與�
 YouTube 官方〈Recommended upload encoding settings〉。閱讀容器、視音編碼、frame rate、畫幅及 SDR 色彩段。採用以平台交付 profile 核對、保留母版的思路；具體編碼候選按 SDR／HDR 與成片需求處理，不由該頁推定來源色彩或新增影格。[正文](https://support.google.com/youtube/answer/1722171?hl=en)
 
 FFmpeg 官方網頁兩個入口逾時，未據搜尋摘要增加參數。另實查本機 ffprobe CLI 的 JSON／format／streams／frames 選項及 ffmpeg ebur128 的 true peak 選項；相關命令只是本機量測入口，不是表演、聲音可懂度或播放器驗收證據。新增內容見 [素材與成片交接](media-handoff.md)。
+
+## 2026-11-09 專案維護研究
+
+### T30 數位影片保存
+
+美國國會圖書館〈Keeping Personal Digital Video〉。閱讀正文開頭的品質與描述資訊建議：保存最高品質版本及可理解的描述，不把網路發布副本當成唯一原始資產。由本技能延伸到工程、音軌、字幕與生成依賴的封存清單；沒有在本次遷移真實資產或建立定期任務。[正文](https://digitalpreservation.gov/personalarchiving/video.html)
+
+### T31 校驗與完整性
+
+Digital Preservation Coalition，Digital Preservation Handbook〈Fixity and checksums〉。閱讀 fixity、checksums 及 application 段：建立已知正確的校驗基線、檢查不同副本、合法格式遷移後建立新基線。採用保留版本與恢復驗證的方法，不把一致 hash 當作內容正確或獨立備份證明；未觀看內嵌影片，檢查頻率依實際系統安排。[正文](https://www.dpconline.org/handbook/technical-solutions-and-tools/fixity-and-checksums)
+
+### T32 素材來源與署名
+
+Creative Commons 官方〈Reusing CC-Licensed Content〉。閱讀 CC attribution、TASL 及 public domain 段，採用標題（有提供時）、作者／指定署名、原始來源與實際授權版本的紀錄。CC0／Public Domain Mark 的脈絡另分；不把 TASL 表格當作新增授權，不由參考影片公開可見推定可重用全部內容。[正文](https://creativecommons.org/reusing-cc-licensed-content/)
+
+### T33 共享專案與寫入責任
+
+Adobe Premiere 官方〈Collaborate efficiently with Productions〉。閱讀多工程組織、media referencing、Designed for collaboration 及 local storage 段。採用明確工程寫入責任與版本交回；project locking 只是 Premiere 的具體機制，不當成所有工具、二進位工程或 NAS 同步的共同能力，也不改既有帳號權限。[正文](https://helpx.adobe.com/premiere/desktop/collaborate-with-others/collaborate-using-productions/about-productions.html)
+
+以上四份於 2026-11-09 讀取相關正文。Blender latest packed-data 手冊取得 402，未據舊版搜尋摘要新增「已打包全部依賴」或特定打包功能的規則。原創封存、用途與改稿工作卡見 [project-stewardship.md](project-stewardship.md)；它是按需製作支援，不改 Foyege 核心。
