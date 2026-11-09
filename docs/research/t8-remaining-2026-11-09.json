@@ -1,0 +1,170 @@
+{
+  "date": "2026-11-09",
+  "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+  "videos": [
+    {
+      "id": "PRxkpAhvfeA",
+      "title": "小脸，动态生成修复！MiniMax H3+高级实验性采样节点+Latent UpScaler，节点又更新啦！RF Restart，Tail 1，STG，Bias",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260820",
+      "duration": 756,
+      "related_description_links": [
+        "https://github.com/T8mars/comfyui-minimax-h3-audio-T8",
+        "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=PRxkpAhvfeA",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "TLlBEYSVf4k",
+      "title": "MiniMax H3单人/多人脸部修复,T8开源新节点！使用方法，原理及参数详解-comfyui教程",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260817",
+      "duration": 815,
+      "related_description_links": [
+        "https://github.com/T8mars/comfyui-minimax-h3-audio-T8"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=TLlBEYSVf4k",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "THQXIc1Bo0w",
+      "title": "图像高清化新路线RFMSR，与SeedVR2.5，FlashVSR对比测评，8K最强AI高清化图像放大工作流新版分支-T8 comfyui教程",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260730",
+      "duration": 546,
+      "related_description_links": [
+        "https://github.com/RealRebelAI/ComfyUI_Rebels_LingBot"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=THQXIc1Bo0w",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "JM3Fz_6CM0Y",
+      "title": "低显存福音！高质量极速MiniMax H3新技术！Vosr 2，Dlss 5，多技术混合级联，图像，视频超分技术再进一步！-comfyui教程",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260907",
+      "duration": 781,
+      "related_description_links": [
+        "https://github.com/ylchen333/ComfyUI-VOSR2",
+        "https://github.com/T8mars/comfyui-minimax-h3-audio-T8"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=JM3Fz_6CM0Y",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "wYJPC13hx-U",
+      "title": "情感演绎！IndexTTS 2.5支持逐句情感控制，MiniMax H3文戏最强搭档，时间戳级情感表达，整合包及comfyui节点双版更新-T8 AI教程",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260902",
+      "duration": 694,
+      "related_description_links": [
+        "https://github.com/T8mars/comfyui-indextts25-t8"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=wYJPC13hx-U",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "PJicMBBkF_E",
+      "title": "最强语音TTS来了！小红书开源全能FireRed Audio，T8第一时间开源整合包及节点，支持声音编辑，8大赛道能力，各个顶配！-comfyui教程",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260902",
+      "duration": 1079,
+      "related_description_links": [
+        "https://github.com/T8mars/comfyui-fireredaudio-T8",
+        "https://huggingface.co/t8star/Firered-Audio-Comfy"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=PJicMBBkF_E",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "by1IyeSmFdY",
+      "title": "这波更新夯爆了！AI虚拟演员库上线！2W无版权虚拟角色，助理创作，随时调用！，AIX上线最强AGENT模式上线，鼠标一点，完全自动！从剧本到分镜，从图像到视频",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260718",
+      "duration": 521,
+      "related_description_links": [],
+      "video_url": "https://www.youtube.com/watch?v=by1IyeSmFdY",
+      "evidence": "metadata and description links only; not full video viewing"
+    },
+    {
+      "id": "2hKzFV58S-s",
+      "title": "MiniMax H3创作神器开源含整合包！官方年更Skill？社区来助力！每个你喜欢的视频都可以成为真正的Skill提示词模板！-T8 教程",
+      "channel_id": "UCCQ8NwZBxQlpE7nQD4i1Viw",
+      "upload_date": "20260811",
+      "duration": 692,
+      "related_description_links": [
+        "https://github.com/T8mars/minimax-h3-prompt-skill-T8"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=2hKzFV58S-s",
+      "evidence": "metadata and description links only; not full video viewing"
+    }
+  ],
+  "additional_pinned_sources": [
+    {
+      "repo": "ylchen333/ComfyUI-VOSR2",
+      "sha": "6a21810b3f4f1a0ffc477c55330db0ac03c671f0",
+      "license": "Apache-2.0",
+      "fetched": [
+        "README.md",
+        "requirements.txt"
+      ],
+      "reading_scope": "README relevant sections and requirements; not a full code audit"
+    },
+    {
+      "repo": "T8mars/comfyui-indextts25-t8",
+      "sha": "22c65286ccaf87665b6b3a65107beb84e45267b3",
+      "license": "NOASSERTION",
+      "fetched": [
+        "README.md",
+        "requirements.txt"
+      ],
+      "reading_scope": "README relevant sections and requirements; not a full code audit"
+    },
+    {
+      "repo": "T8mars/comfyui-fireredaudio-T8",
+      "sha": "715203a451dd4db6ca412be86c723db9fc1d89dd",
+      "license": "Apache-2.0",
+      "fetched": [
+        "README.md",
+        "requirements.txt"
+      ],
+      "reading_scope": "README relevant sections and requirements; not a full code audit"
+    },
+    {
+      "repo": "Carasibana/ComfyUI-H3-FaceRefine",
+      "sha": "d8521d14fe0d721d80cd9417fff5a559cbc21aba",
+      "license": "MIT",
+      "fetched": [
+        "README.md",
+        "requirements.txt"
+      ],
+      "reading_scope": "README relevant sections and requirements; not a full code audit"
+    }
+  ],
+  "reused_pins": [
+    {
+      "repo": "T8mars/comfyui-minimax-h3-audio-T8",
+      "sha": "3a23f333537d9a715aad7ce79af8d9ec891d9ad8",
+      "reading_scope": "visible mask, frozen source, continuation, lazy branch, face refine, modular sampling, DLSS, Topaz and HyperFlow relevant documentation"
+    },
+    {
+      "repo": "T8mars/Code-Animate-T8",
+      "sha": "d4f0d1216d33781ce47f38de770d93626f85e7ce",
+      "reading_scope": "skill/TOOLS.md lines 1-100 and skill/SKILL.md lines 1-48"
+    },
+    {
+      "repo": "T8mars/Comfyui-Hi3d-T8",
+      "sha": "8fae8e4e86a83f3af92a9b9bfcd6c8b78dfa75bc",
+      "reading_scope": "docs/ASSET_STUDIO.md selected sections"
+    }
+  ],
+  "local_inference": false,
+  "new_installation": false,
+  "model_download": false,
+  "limitations": [
+    "Titles and descriptions are discovery evidence, not quality evidence.",
+    "License API identifiers do not establish model or asset rights.",
+    "Upstream test reports are not local results."
+  ]
+}

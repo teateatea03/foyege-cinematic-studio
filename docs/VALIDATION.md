@@ -1,5 +1,13 @@
 # 驗證範圍
 
+## 2026-11-09 其餘候選第二輪篩選
+
+[研究與採用界線](RESEARCH_2026-11-09-t8-remaining.md) 保留 8 支新增 metadata、4 個新增固定來源及既有 H3／圖形／3D 文件閱讀範圍。新增後製、恢復與動態圖形選用卡；公開／Codex／Claude 的工具頁只追加一段條件入口，原入口及既有文字位元組保持，新參考 SHA256 相同，修改前備份保留。
+
+套件 YAML／內部連結／JSON／Python 語法檢查、五項安裝器測試、三份 Foyege quick_validate 及 git diff --check 通過。qtools 的 Gitleaks 工作目錄掃描未命中；首次 Git Bash 的 node 別名要求 TTY，改用原生 node.exe 執行後通過，沒有修改工具或環境設定。秘密掃描為啟發式檢查。
+
+六種文字條件走查包含表情時序被改、多人失追、刻意定格、來源變更、一般提示詞及缺原片／遮罩；這是維護者人工文字核對，沒有獨立模型行為或品質評測。本輪未安裝、下載權重、啟動服務、使用 GPU 或完整觀看這批教學。
+
 ## 2026-11-09 優先工具隔離部署
 
 [條件與結果](experiments/2026-11-09-priority-crew/README.md)：可攜字幕 CLI 在 5080 完整跑 8 cue；標記生成 90 幀；MMAudio 生成一次並做 CUDA 時間取樣校準、PCM frame alignment 及保留視訊 packet 的聽審合片。字幕初版格式失配／加戲、標記殘框與未聽審的限制均保留。API 圖及真實瀏覽器的 19／6 節點載入通過，沒有 missing／error node；沒有宣稱整個 console 無錯誤。

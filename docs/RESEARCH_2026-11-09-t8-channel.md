@@ -2,6 +2,8 @@
 
 2026-11-09。接續 [Drama3 配音研究](RESEARCH_2026-11-09-drama3-voice.md)，調查使用者所指頻道還有哪些方法值得補進劇組。這是研究與候選清單，未部署新節點、下載權重、啟動服務或執行 GPU 推論。
 
+後續狀態：[三項優先工具已作隔離短測](experiments/2026-11-09-priority-crew/README.md)；其他候選另見 [第二輪篩選](RESEARCH_2026-11-09-t8-remaining.md)。下方保留首輪調查當時的狀態。
+
 ## 調查範圍
 
 - 頻道為 [T8star-Aix](https://www.youtube.com/@T8star-Aix/)，channel ID `UCCQ8NwZBxQlpE7nQD4i1Viw`。
