@@ -219,3 +219,35 @@ The Film Look，2018-06-26〈Coming to a Halt | Motivated Camera Moves〉。閱�
 ACMI〈Exploring camera movement〉。閱讀 introduction、Static、Panning、Tilting、Tracking 段，採用靜止也是選擇、搖攝揭露與跟拍焦點的區分。未播放頁內示例，不把平順運動當成所有風格的必要條件。[博物館教學](https://www.acmi.net.au/education/school-program-and-resources/exploring-camera-movement/)
 
 以上四組於 2026-11-09 查閱相關正文。新增 [運鏡與表情](camera-movement.md) 為原創選擇卡與本機適配。Blender 5.2／5.0 Follow Path、latest cameras／F-Curve 及 current API 網頁入口取得 402 或無法存取，未把搜尋摘要當作已讀手冊；本機另用 Blender 5.2.3 的投影與依賴圖實測核對距離／焦距及路徑／目標分離。這不是渲染、速度曲線或生成影片品質證據。
+
+## 2026-11-09 劇組職能研究
+
+### T38 劇組功能與現場責任
+
+ScreenSkills 的 Film and TV drama、Post-production 分類頁，以及 Cleveland State University〈The On-Set Duties of the Main Crew Positions〉Producer、Director、AD、DP、AC、Gaffer／Grip、Production Designer、Sound 段。用於職能範圍及資訊交接；小組職務可合併，不把其中任何一套組織當作各國所有劇組的固定編制。[影視分類](https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/) · [後期分類](https://www.screenskills.com/job-profiles/browse/post-production/) · [大學教學](https://artsandsciences.csuohio.edu/film/set-duties-main-crew-positions)
+
+### T39 副導與製作排程
+
+ScreenSkills〈Assistant director〉職責與 planning 段。採用劇本拆解、跨部門準備及依人員／場景條件排順序；AI 製作的裝置、載入、資產依賴與候選額度由本技能延伸，不要求購買其提及的排程軟體。[正文](https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/production-management/assistant-director)
+
+### T40 美術與攝影的共同外觀
+
+ScreenSkills〈Production designer〉及〈Director of photography〉職責段。採用美術、攝影、燈光共同建立視覺世界，以及攝影與調色交接；素材狀態卡、世界光源、已知／未知色彩欄位由本技能整理。gaffer 的獨立頁無法取得，未列為已讀；其職能只依 T38 大學正文及 DP 的配合敘述。[美術設計](https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/craft/production-designer-film-and-tv-drama/) · [攝影指導](https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/technical/director-of-photography-dop/)
+
+### T41 收音與前期聲音責任
+
+ScreenSkills〈Sound mixer〉職責、現場問題及 communication 段。採用前期檢查聲音條件、現場記錄缺陷與補錄／後期責任；cue 卡及 AI／MV 音軌鎖定為本技能延伸。沒有錄音或聽審，不由職責文字推定可懂度已通過。[正文](https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/technical/sound-mixer/)
+
+### T42 DIT 與素材品管
+
+ScreenSkills〈Digital imaging technician〉職責與協作段。採用焦點、構圖、曝光問題與後期資訊的交接；不將「相機 RAW」直接套到生成影片，不能推定其可調色空間。原檔／代理／look 及雜湊方法沿用既有素材交接頁。[正文](https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/technical/digital-imaging-technician-film-and-tv-drama/)
+
+### T43 VFX 前期與返回
+
+ScreenSkills〈VFX supervisor〉職責、前期及 production 協作段。採用逐鏡規劃所需特效、前期確認可用素材及監督返回品質；source／timeline 範圍、mask／alpha、相機與素材責任是本技能的具體交接設計，未宣稱某個節點已輸出這些資料。[正文](https://www.screenskills.com/job-profiles/browse/visual-effects-vfx/on-set/vfx-supervisor/)
+
+### T44 調色與後期統籌
+
+Colorist Society〈Role of the Colorist〉Preface、Duties、各製作階段，以及 ScreenSkills〈Post-production supervisor (Post-production)〉職責段。採用攝影／VFX／調色的共用外觀、時間與預算及完整返回責任；不要求全部任務新增調色流程，不把文件盤點當作監看校準或混音／定剪驗收。[調色職責](https://coloristsociety.com/role-of-the-colorist) · [後期統籌](https://www.screenskills.com/job-profiles/browse/post-production/management/post-production-supervisor-post-production)
+
+以上七組於 2026-11-09 查閱相關正文，未觀看其影片或下載附加教材。職能到本機技能的比對是維護者評估；新增 [跨部門製作](crew-workflow.md) 及 [部門交接](department-handoffs.md) 為按需支援，未增加軟體、模型、帳號或自動執行。

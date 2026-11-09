@@ -89,3 +89,11 @@
 Blender 5.2.3 獨立程序的相機投影及 Follow Path／Track To 依賴圖核對 exit 0；相同主體投影尺寸的推軌／變焦，背景比例不同，路徑與目標可分離。公開原創重現腳本及去除本機資訊的 JSON。沒有渲染、影片生成、音訊或挖礦操作，未驗證完整速度、roll、景深或連續成片。
 
 修改前備份本機 20 個、公開技能 19 個原檔；兩版各只修改入口、production、spatial-previs、tutorials 四檔，新增 camera-movement.md。其餘本機 16 檔、公開 15 檔逐位元組一致；入口 metadata 與核心決策段保持。新頁兩版逐位元組一致，原有私人資源及 GPU／預演腳本保留。本機／公開導演技能的 quick_validate.py 均通過；套件檢查涵蓋 2 個技能、203 個內部連結、11 份 JSON、3 份 Python、50 份文字，零錯誤。Gitleaks 工作目錄掃描無命中；Git diff 檢出新增來源段末端空白行後已修正。格式與秘密掃描不代表影片品質或完全無秘密。
+
+## 2026-11-09 劇組職能補強
+
+[22 組職能與 12 組文字走查](CREW_CAPABILITY_AUDIT_2026-11-09.md) 對照已讀技能及七組第一方來源。film-production 原有十二階段、資產與成本方法已納入盤點；editing-pipeline 的圖像編輯入口不算影片剪輯能力。新增 crew-workflow.md、department-handoffs.md，Foyege 入口、production、media-handoff、tutorials 加按需路由／來源；本機 film-production 入口與 production-design 加可選交接路由。
+
+修改前備份本機 Foyege 21 檔、公開 20 檔、film-production 8 檔。實際只改 Foyege 四個原檔及 film-production 兩檔，新增兩份參考；其餘本機 Foyege 17 檔、公開 16 檔與 film-production 6 檔逐位元組一致，兩份新參考的本機／公開版逐位元組一致。入口 metadata、核心、責任與 GPU 規則保留。公開包維持兩個技能，文字規劃可獨立使用。
+
+本輪只做文件盤點及維護者文字走查，未執行生成、渲染、音訊、實拍或整片驗收。專項能力與跨工具返回仍須按作品實測。本機／公開 Foyege 及本機 film-production 的 quick_validate.py 均通過。套件檢查涵蓋 2 個技能、235 個內部連結、11 份 JSON、3 份 Python、53 份文字，零錯誤；另核對本機改動頁 146 個內部連結。Git diff 空白檢查通過，Gitleaks 工作目錄掃描無命中。這些結構與啟發式檢查不能證明完整出片能力或完全無秘密。
